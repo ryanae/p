@@ -25,6 +25,7 @@ header {
 
 section {
   height: auto;
+  margin-top: 10px;
 }
 
 h1 {
@@ -143,9 +144,31 @@ nav {
 }
 
 /* SECTION: skills */
-.skills {
-
+#skillSection {
+  height: 100vh;
 }
+
+#skillSection .skillTemplate {
+  padding: 10px;
+  width: auto;
+  margin: 15px;
+  background: #fff;
+  color: #ff6b72;
+  text-align: center;
+  font-size: 16px;
+}
+
+#skillSection .skillTemplate h2 {
+  display: block;
+  height: 20px;
+  margin-top: 0px;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
 
 /* RESPONSIVE: PHONES */
 
@@ -174,6 +197,10 @@ nav {
   .display {
     overflow: auto;
   }
+  
+  #skillSection {
+    height: auto;
+  }
 }
 
 /* RESPONSIVE: TABLETS */
@@ -195,21 +222,24 @@ nav {
   .display {
     overflow: auto;
   }
+  
+  #skillSection {
+    height: auto;
+  }
 }
 
 /* RESPONSIVE: DESKTOP */
 
 @media all and (min-width: 811px) and (max-width: 1920px) {  
   header {
+     margin-top: 100px;
   }
   
   .openButton, #navMenu {
      display: none;
   }
   
-	main {
-		width: auto;
-	}
-  
-  
+  #skillSection {
+    height: auto;
+  }
 }
