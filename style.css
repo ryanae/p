@@ -74,6 +74,30 @@ nav {
   transition: 0.5s;
 }
 
+.displayLinks {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  height: auto;
+}
+
+.displayLinks a {
+  display: block;
+  padding: 5px;
+  font-family: 'Abel', sans-serif;
+  font-size: 36px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.displayLinks a:hover, .displayLinks a:active {
+  color: #ff6b72;
+}
+
   /* open button */
 .openButton {
   padding: 3px;
@@ -146,6 +170,10 @@ nav {
 	main {
 		width: auto;
 	}
+  
+  .display {
+    overflow: auto;
+  }
 }
 
 /* RESPONSIVE: TABLETS */
@@ -163,6 +191,10 @@ nav {
 	main {
 		width: auto;
 	}
+  
+  .display {
+    overflow: auto;
+  }
 }
 
 /* RESPONSIVE: DESKTOP */
@@ -178,5 +210,6 @@ nav {
 	main {
 		width: auto;
 	}
+  
   
 }
