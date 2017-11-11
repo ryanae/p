@@ -68,8 +68,8 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: 0px;
   background: #74d0d3;
   overflow-y: hidden;
   transition: 0.5s;
@@ -135,11 +135,18 @@ nav {
 
 /* intro blurb */
 .intro {
-  color: #ff6b72;
+  display: block;
+  padding: 5px;
+  width: 35%;
+  background: #ff6b72;
+  color: #a2e5e4;
   text-align: center;
-  font-size: 11px;
+  font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 
@@ -183,7 +190,7 @@ nav {
 @media all and (max-width: 480px) {  
   header {
     margin-top: 50px;
-    font-size: 60px;
+    font-size: 80px;
   }
   
   .navBar {
@@ -226,6 +233,12 @@ nav {
   #skillSection {
     height: auto;
   }
+  
+  
+  #skillSection .skillTemplate {
+
+  }
+  
 }
 
 /* RESPONSIVE: DESKTOP */
