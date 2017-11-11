@@ -11,10 +11,15 @@
   <link href="https://fonts.googleapis.com/css?family=Abel|Karla" rel="stylesheet">
   
   <!-- JS -->
-  <script>
-  function changeButton(x) {
-		x.classList.toggle("change");
-	}
+  <script>  
+  function openDisplay() {
+  	document.getElementById("navMenu").style.height = "100%";
+  }
+  
+    function closeDisplay() {
+  	document.getElementById("navMenu").style.height = "0%";
+  }
+  
   </script>
 	
 	<title>Audrey Ryan</title>
@@ -38,22 +43,49 @@
     </section>
     
     <!-- responsive menu -->
-    <section class="navMenu">
-      <div class="menuButton" onclick="changeButton(this)">
+    <div class="openButton" onclick="openDisplay()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    
+    <section id="navMenu" class="display">
+      <a href="javascript:void(0)" onclick="closeDisplay()" class="closeButton">&times;</a>
+    </section>
+    
+    <!--
+    <section id="navMenu">      
+      
+      <div class="navDisplay">
+      </div>
+      
+      <div class="openButton">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
       
+      <div class="closeButton">
+      
+      </div>
+      
     </section>
+    -->
+    
 	</nav>
 
   <main>
+    <!-- intro blurb -->
+    <section class="intro">
+      <p>
+      this is an intro blurb
+      </p>
+    </section>
+    
   	<!-- SECTION: skills -->
     <section class="skills">
-      <p>
-      non technical
-      </p>
+      <h1>What I Offer</h1>
+      
     
   	</section>
     
