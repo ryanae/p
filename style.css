@@ -2,6 +2,7 @@
 
 body {
 	background: #8FD9DF;
+  color: #fff;
 	font-family: helvetica;
 	font-size: 11px;
 }
@@ -11,17 +12,27 @@ header {
 	letter-spacing: -2px;
 }
 
+main {
+  padding: 10px;
+  width: 800px;
+}
+
 section {
-	padding: 10px;
 	border: 1px solid #333;
 }
 
+/* RESPONSIVE: PHONES */
 
+@media (max-width: 480px) {  
+	main {
+		width: auto;
+	}
+}
 
 /* RESPONSIVE: PHONES */
 
-@media (max-width: 480px) {
-	#section {
-		width: 50%;
+@media all and (max-width: 480px) {  
+	main {
+		width: auto;
 	}
 }
