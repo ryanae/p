@@ -1,24 +1,91 @@
 /* GENERAL STYLING */
 
 body {
-	background: #8FD9DF;
+	background: #000;
   color: #fff;
-	font-family: helvetica;
-	font-size: 11px;
-}
-
-header {
-	font-size: 18px;
-	letter-spacing: -2px;
+	font-family: 'Karla', sans-serif;
+	font-size: 14px;
 }
 
 main {
   padding: 10px;
   width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  color: #ffe100;
+	font-size: 80px;
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+	letter-spacing: -2px;
+  text-align: center;
 }
 
 section {
-	border: 1px solid #333;
+  height: 600px;
+}
+
+nav {
+
+}
+
+.navBar {
+  position: absolute;
+  top: 0px;
+  width: auto;
+  height: 30px;
+  padding: 8px;
+  display: block;
+  border: 1px solid white;
+  text-align: center;
+}
+
+/* menu used for smaller screens */
+.navMenu {
+  padding: 3px;
+  float: right;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.menuButton {
+  display: block;
+}
+
+.bar1, .bar2, .bar3 {
+  background: #fff;
+  width: 30px;
+  height: 3px;
+  margin: 6px 0px;
+  transition: 0.5s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 7px);
+  -moz-transform: rotate(-45deg) translate(-6px, 7px);
+  -ms-transform: rotate(-45deg) translate(-6px, 7px);
+  -o-transform: rotate(-45deg) translate(-6px, 7px);
+  transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-4px, -7px);
+  -moz-transform: rotate(45deg) translate(-4px, -7px);
+  -ms-transform: rotate(45deg) translate(-4px, -7px);
+  -o-transform: rotate(45deg) translate(-4px, -7px);
+  transform: rotate(45deg) translate(-4px, -7px);
+}
+
+/* SECTION: skills */
+.skills {
+  background: #ffe100;
 }
 
 /* RESPONSIVE: PHONES */
@@ -32,7 +99,48 @@ section {
 /* RESPONSIVE: PHONES */
 
 @media all and (max-width: 480px) {  
+  header {
+    font-size: 48px;
+  }
+  
+  .navBar {
+    display: none;
+  }
+  
 	main {
 		width: auto;
 	}
+}
+
+/* RESPONSIVE: TABLETS */
+
+@media all and (min-width: 481px) and (max-width: 810px) {  
+  header {
+    font-size: 48px;
+  }
+  
+  .navBar {
+     display: none;
+  }
+  
+	main {
+		width: auto;
+	}
+}
+
+/* RESPONSIVE: DESKTOP */
+
+@media all and (min-width: 811px) and (max-width: 1920px) {  
+  header {
+    font-size: 48px;
+  }
+  
+  .navMenu {
+     display: none;
+  }
+  
+	main {
+		width: auto;
+	}
+  
 }

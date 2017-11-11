@@ -8,27 +8,49 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
   
   <!-- Google Font APIs -->
+  <link href="https://fonts.googleapis.com/css?family=Abel|Karla" rel="stylesheet">
+  
+  <!-- JS -->
+  <script>
+  function changeButton(x) {
+		x.classList.toggle("change");
+	}
+  </script>
 	
 	<title>Audrey Ryan</title>
 </head>
 
 
 <body>
-	<header>Audrey Ryan</header>
+
+  <header>Audrey Ryan</header>
 
 	<!-- NAVIGATION -->
 	<nav>
-		<ul>
-			<li>Home</li>
-			<li>Work</li>
-			<li>About</li>
-			<li>Contact</li>
+  
+  <!-- bigger displays use bar -->
+    <section class="navBar">
+      <a href="index.html">home</a> | 
+      <a href="index.html">skills</a> | 
+      <a href="index.html">portfolio</a> |
+      <a href="index.html">about</a> |
+      <a href="index.html">contact</a>
+    </section>
+    
+    <!-- responsive menu -->
+    <section class="navMenu">
+      <div class="menuButton" onclick="changeButton(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      
+    </section>
 	</nav>
-
 
   <main>
   	<!-- SECTION: skills -->
-    <section>
+    <section class="skills">
       <p>
       non technical
       </p>
@@ -36,8 +58,8 @@
   	</section>
     
     <section>
-		<p> new section </p>
-	</section>
+		  <p> new section </p>
+    </section>
   </main>
 
 </body>
