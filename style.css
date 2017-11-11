@@ -32,14 +32,15 @@ h1 {
   font-family: 'Abel', sans-serif;
   font-weight: bold;
   font-size: 36px;
-  border-left: 8px #ff6b72 solid;
-  padding-left: 10px;
+  border-left: 12px #ff6b72 solid;
+  padding-left: 20px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
+  background: #74d0d3;
 }
 
-/*
 h1:hover {
-  background: #c3f4f3;
+  border-left: 28px #ff6b72 solid;
   color: #ff6b72;
   cursor: default;
 }
@@ -72,6 +73,7 @@ nav {
   left: 0px;
   background: #74d0d3;
   overflow-y: hidden;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -92,6 +94,7 @@ nav {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -114,7 +117,6 @@ nav {
   width: 30px;
   height: 3px;
   margin: 6px 0px;
-  transition: 0.5s;
 }
 
   /* close button */
@@ -151,31 +153,54 @@ nav {
 }
 
 /* SECTION: skills */
-#skillSection {
-  height: 100vh;
+.skillsContent {
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#skillSection .skillTemplate {
-  padding: 10px;
-  width: auto;
-  margin: 15px;
+.skillCardWhite h2, .skillCardPink h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skillCardWhite {
+  margin: 5px;
+  padding: 15px;
+  width: 275px;
+  font-size: 14px;
+  line-height: 20px;  
+  text-align: center;
   background: #fff;
   color: #ff6b72;
+  -webkit-transition: 0.5s;
+  transition: 0.3s;
+}
+
+.skillCardPink {
+  margin: 5px;
+  padding: 15px;
+  width: 275px;
+  font-size: 14px;
+  line-height: 20px;  
   text-align: center;
-  font-size: 16px;
+  background: #ff6b72;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-#skillSection .skillTemplate h2 {
-  display: block;
-  height: 20px;
-  margin-top: 0px;
-  font-size: 28px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.skillCardPink:hover, .skillCardWhite:hover {
+  color: #333;
 }
-
-
 
 /* RESPONSIVE: PHONES */
 
@@ -205,8 +230,14 @@ nav {
     overflow: auto;
   }
   
-  #skillSection {
-    height: auto;
+  .skillsContent {
+    display: block;
+    width: auto;
+  }
+  
+  .skillCardWhite, .skillCardPink {
+    width: auto;
+    margin: 10px;
   }
 }
 
@@ -230,15 +261,14 @@ nav {
     overflow: auto;
   }
   
-  #skillSection {
-    height: auto;
+  .skillsContent {
+    width: auto;
   }
   
-  
-  #skillSection .skillTemplate {
-
+  .skillCardWhite, .skillCardPink {
+    margin: 10px;
+    width: 40%;
   }
-  
 }
 
 /* RESPONSIVE: DESKTOP */
@@ -246,13 +276,19 @@ nav {
 @media all and (min-width: 811px) and (max-width: 1920px) {  
   header {
      margin-top: 100px;
+     margin-bottom: 50px;
   }
   
   .openButton, #navMenu {
      display: none;
   }
   
-  #skillSection {
-    height: auto;
+    .skillsContent {
+    width: auto;
+  }
+  
+  .skillCardWhite, .skillCardPink {
+    margin: 15px;
+    width: 25%;
   }
 }
