@@ -45,10 +45,13 @@ h1:hover {
   border-left: 28px #ff6b72 solid;
   cursor: default;
 }
-*/
 
-nav {
+ul {
+  list-style-position: inside;
+}
 
+.noScroll {
+  overflow: hidden;
 }
 
 /* bar used for desktop displays */
@@ -91,7 +94,7 @@ nav {
   top: -10px;
   left: 0px;
   background: #74d0d3;
-  overflow-y: hidden;
+  overflow-y: scroll;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -317,7 +320,7 @@ nav {
   left: 0px;
   background: #fff;
   color: #333;
-  overflow-y: hidden;
+  overflow-y: scroll;
   -webkit-transition: 0.5s;
   transition: 0.5s; 
 }
@@ -339,6 +342,30 @@ nav {
   max-width: 20%;
   float: left;
   margin: 0px 15px 10px 0px;
+}
+
+
+/* Section: about */
+
+.aboutContent {
+  width: 750px;
+}
+
+.portrait {
+  padding: 15px 15px 10px 15px;
+  background: #74d0d3;
+}
+
+.portrait img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.aboutDesc {
+  width: 500px;
+  background: #74d0d3;
+  margin: 10px;
+  padding: 2px 15px 2px 15px;
 }
 
 
@@ -380,7 +407,7 @@ nav {
   }
   
   /* Identical flex containers */
-  .skillsContent, .UXContent, .gallery {
+  .skillsContent, .UXContent, .gallery, .aboutContent {
     display: block;
     width: auto;
   }
@@ -396,6 +423,17 @@ nav {
   
   .UXCardDesc {
     width: 100%;
+  }
+
+  .portrait {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .aboutDesc {
+    width: auto;
+    margin-top: 30px;
   }
  
 }
@@ -418,7 +456,7 @@ nav {
   }
   
   .display, .pageDisplay {
-    overflow: auto;
+    overflow-y: scroll;
   }
   
   /* Identical flex containers */
@@ -457,7 +495,7 @@ nav {
   }
   
   .display, .pageDisplay {
-    overflow: auto;
+    overflow-y: scroll;
   }
   
   /* Identical flex containers */
