@@ -9,8 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
   
   <!-- Google Font APIs -->
-  <link href="https://fonts.googleapis.com/css?family=Abel|Karla" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css?family=Abel|Karla:400,400i,700,700i" rel="stylesheet">
+
   <!-- JS -->
   <script>  
   function openDisplay() {
@@ -19,10 +19,6 @@
   
   function closeDisplay() {
   	document.getElementById("navMenu").style.height = "0%";
-  }
-  
-  function scrollToSkills() {
-    getElementById("skills").scrollIntroView({behavior: "smooth", block: "start"});
   }
   
   </script>
@@ -58,11 +54,11 @@
       <a href="javascript:void(0)" onclick="closeDisplay()" class="closeButton">&times;</a>
        
        <div class="displayLinks">
-       <a href="index.html">Home</a>
-       <a href="#skills">What I Offer</a>
-       <a href="#portfolio">Porfolio</a>
-       <a href="#about">About</a>
-       <a href="#contact">Contact</a>
+       <a href="index.html" onclick="closeDisplay()">Home</a>
+       <a href="#skills" onclick="closeDisplay()">What I Offer</a>
+       <a href="#portfolio" onclick="closeDisplay()">Porfolio</a>
+       <a href="#about" onclick="closeDisplay()">About</a>
+       <a href="#contact" onclick="closeDisplay()">Contact</a>
        </div>
        
     </section>
@@ -135,21 +131,49 @@
 		  <section class="UXContent">
 
 		  	<article class="UXCard">
-		  		<p>
-          <img src="https://github.com/ryanae/p/blob/master/IMGs/messengerredux.png?raw=true" alt="Messenger Redux"><br>title
-          </p>
+          <img src="https://github.com/ryanae/p/blob/master/IMGs/messengerredux.png?raw=true" alt="Messenger Redux"><br>
+          
+          <article class="UXCardDesc">
+            <h3>
+            Messenger Redux
+            </h3>
+            
+            <p>
+            well then wtf happens if i write a really long description tdfkglsdjglkfjdgsl
+            </p>
+            
+            <article class="UXCardLink">
+              <a href="javascript:void(0)">See more</a>
+            </article>
+     
+          </article>
 		  	</article>
 
         <article class="UXCard">
-		  		<p>
-          img<br>title
+        <img src="https://github.com/ryanae/p/blob/master/IMGs/ASH.png?raw=true" alt="ASH"><br>
+        
+        <article class="UXCardDesc">
+          <h3>
+          Anteaters Stop Hunger
+          </h3>
+          
+          <p>
+          beep beep richie i do like jsfiddle actually dskfjlakdsfjklsdfla
           </p>
-		  	</article>
-
-
-		  </section>
-
-		  <h2>Art & Photography Gallery</h2>
+          
+          <article class="UXCardLink">
+              <a href="javascript:void(0)">See more</a>
+          </article>
+        </article>
+      </article>
+      
+      
+      
+        
+        
+		  		<h2>
+          Art & Photography Gallery
+          </h2>
 
 		  <section class="gallery">
 

@@ -3,7 +3,7 @@
 body {
 	background: #a2e5e4;
   color: #fff;
-	font-family: 'Karla', sans-serif;
+	font-family: 'Karla', helvetica, sans-serif;
 	font-size: 14px;
   margin: 0px;
 }
@@ -18,7 +18,7 @@ main {
 header {
   color: #fff;
 	font-size: 120px;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Abel', helvetica, sans-serif;
   font-weight: bold;
 	letter-spacing: -2px;
   text-align: center;
@@ -31,7 +31,7 @@ section {
 }
 
 h1 {
-  font-family: 'Abel', sans-serif;
+  font-family: 'Abel', helvetica, sans-serif;
   font-weight: bold;
   font-size: 36px;
   border-left: 12px #ff6b72 solid;
@@ -98,7 +98,7 @@ nav {
 
 .displayLinks {
   position: relative;
-  top: 40%;
+  top: 15%;
   width: 100%;
   margin-top: 30px;
   text-align: center;
@@ -108,7 +108,7 @@ nav {
 .displayLinks a {
   display: block;
   padding: 5px;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Abel', helvetica, sans-serif;
   font-size: 36px;
   text-decoration: none;
   font-weight: bold;
@@ -223,10 +223,11 @@ nav {
   cursor: default;
 }
 
+
 /* SECTION: portfolio */
 #portfolio h2 {
   color: #ff6b72;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Abel', helvetica, sans-serif;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -244,8 +245,8 @@ nav {
 
 .UXCard {
   width: 275px;
-  padding: 2px 15px 2px 15px; 
-  margin: 15px;
+  padding: 15px 15px 5px 15px;
+  margin: 20px;
   background: #fff;
   color: #333;
 }
@@ -271,9 +272,43 @@ nav {
   opacity: 1;
 }
 
+ .UXCardDesc {
+   background: #ff6b72;
+   color: #fff;
+   display: inline-block;
+   padding: 5px 15px 15px 15px;
+   width: 320px;
+   position: relative;
+   bottom: -10px;
+   left: -15px;
+}
+
+.UXCardDesc h3 {
+  font-family: 'Abel', helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: -2px;
+}
+
+.UXCardLink, .UXCardLink a {
+  text-align: right;
+  color: #fff;
+  text-decoration: none;
+}
+
 /**
 
-responsive
+
+
+
+
+
+
+
+
+
 
 **/
 
@@ -314,7 +349,7 @@ responsive
   }
   
   .UXCard {
-    width: 300px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -326,6 +361,7 @@ responsive
     -o-opacity: 1;
     opacity: 1;
   }
+  
 }
 
 /* RESPONSIVE: TABLETS */
@@ -358,6 +394,10 @@ responsive
     width: 40%;
   }
   
+  .UXCard {
+    width: auto;
+  }
+
   .UXCard img {
     -webkit-opacity: 1;
     -moz-opacity: 1;
