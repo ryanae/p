@@ -21,6 +21,13 @@
   	document.getElementById("navMenu").style.height = "0%";
   }
   
+  function scrollTo(id) {
+  	if (String(id) == "skills") {
+    	var target = getElementById("skills");
+    }
+  	target.scrollIntroView({behavior: "smooth", block: "start"});
+  }
+  
   </script>
 	
 	<title>Audrey Ryan</title>
@@ -36,11 +43,11 @@
   
   <!-- bigger displays use bar -->
     <section class="navBar">
-      <a href="index.html">home</a> | 
-      <a href="index.html">skills</a> | 
-      <a href="index.html">portfolio</a> |
-      <a href="index.html">about</a> |
-      <a href="index.html">contact</a>
+      <a href="index.html">home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#skills">what i offer</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="index.html">portfolio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="index.html">about</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="index.html">contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
     </section>
     
     <!-- responsive menu -->
@@ -123,21 +130,21 @@
   	</section>
     
     <!-- sec -->
-    <section>
+    <section id="portfolio">
       <h1>
       Portfolio
       </h1>
 		  <p> new section </p>
     </section>
     
-     <section>
+     <section id="about">
       <h1>
       About
       </h1>
 		  <p> new section </p>
     </section>
     
-     <section>
+     <section id="contact">
       <h1>
       Contact
       </h1>
