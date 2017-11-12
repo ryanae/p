@@ -60,6 +60,7 @@ nav {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 1;
   display: block;
   background: #333;
   text-align: center;
@@ -222,6 +223,60 @@ nav {
   cursor: default;
 }
 
+/* SECTION: portfolio */
+#portfolio h2 {
+  color: #ff6b72;
+  font-family: 'Abel', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.UXContent, .gallery {
+  display: flex;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.UXCard {
+  width: 275px;
+  padding: 2px 15px 2px 15px; 
+  margin: 15px;
+  background: #fff;
+  color: #333;
+}
+
+.UXCard img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  -ms-opacity: 0.7;
+  -o-opacity: 0.7;
+  opacity: 0.7;
+}
+
+.UXCard img:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+
+/**
+
+responsive
+
+**/
+
 /* RESPONSIVE: PHONES */
 
 @media all and (max-width: 690px) {  
@@ -247,7 +302,8 @@ nav {
     overflow: auto;
   }
   
-  .skillsContent {
+  /* Identical flex containers */
+  .skillsContent, .UXContent, .gallery {
     display: block;
     width: auto;
   }
@@ -255,6 +311,20 @@ nav {
   .skillCardWhite, .skillCardPink {
     width: auto;
     margin: 10px;
+  }
+  
+  .UXCard {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .UXCard img {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -278,13 +348,22 @@ nav {
     overflow: auto;
   }
   
-  .skillsContent {
+  /* Identical flex containers */
+  .skillsContent, .UXContent, .gallery {
     width: auto;
   }
   
   .skillCardWhite, .skillCardPink {
     margin: 10px;
     width: 40%;
+  }
+  
+  .UXCard img {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -300,7 +379,8 @@ nav {
      display: none;
   }
   
-    .skillsContent {
+  /* Identical flex containers */
+  .skillsContent, .UXContent, .gallery {
     width: auto;
   }
   

@@ -17,15 +17,12 @@
   	document.getElementById("navMenu").style.height = "100%";
   }
   
-    function closeDisplay() {
+  function closeDisplay() {
   	document.getElementById("navMenu").style.height = "0%";
   }
   
-  function scrollTo(id) {
-  	if (String(id) == "skills") {
-    	var target = getElementById("skills");
-    }
-  	target.scrollIntroView({behavior: "smooth", block: "start"});
+  function scrollToSkills() {
+    getElementById("skills").scrollIntroView({behavior: "smooth", block: "start"});
   }
   
   </script>
@@ -45,9 +42,9 @@
     <section class="navBar">
       <a href="index.html">home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
       <a href="#skills">what i offer</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="index.html">portfolio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="index.html">about</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="index.html">contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#portfolio">portfolio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#about">about</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#contact">contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
     </section>
     
     <!-- responsive menu -->
@@ -62,10 +59,10 @@
        
        <div class="displayLinks">
        <a href="index.html">Home</a>
-       <a href="index.html">What I Offer</a>
-       <a href="index.html">Porfolio</a>
-       <a href="index.html">About</a>
-       <a href="index.html">Contact</a>
+       <a href="#skills">What I Offer</a>
+       <a href="#portfolio">Porfolio</a>
+       <a href="#about">About</a>
+       <a href="#contact">Contact</a>
        </div>
        
     </section>
@@ -122,7 +119,7 @@
         <article class="skillCardPink">
           <h2>Tenacity</h2>
           <p>
-          Eager to learn and master any technical and creative skills, no matter how grueling
+          Eager to learn and master any technical and creative skills
           </p>
         </article>
         
@@ -131,10 +128,37 @@
     
     <!-- sec -->
     <section id="portfolio">
-      <h1>
-      Portfolio
-      </h1>
-		  <p> new section </p>
+      <h1>Portfolio</h1>
+		  
+		  <h2>Software & UX Design</h2>
+
+		  <section class="UXContent">
+
+		  	<article class="UXCard">
+		  		<p>
+          <img src="https://github.com/ryanae/p/blob/master/IMGs/messengerredux.png?raw=true" alt="Messenger Redux"><br>title
+          </p>
+		  	</article>
+
+        <article class="UXCard">
+		  		<p>
+          img<br>title
+          </p>
+		  	</article>
+
+
+		  </section>
+
+		  <h2>Art & Photography Gallery</h2>
+
+		  <section class="gallery">
+
+		  	<article class ="pic">
+
+		  	</article>
+		  </section>
+
+
     </section>
     
      <section id="about">
