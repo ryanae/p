@@ -27,7 +27,7 @@ header {
 
 section {
   height: auto;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 h1 {
@@ -91,7 +91,7 @@ ul {
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: -10px;
+  top: -50px;
   left: 0px;
   background: #74d0d3;
   overflow-y: scroll;
@@ -346,14 +346,20 @@ ul {
 
 
 /* Section: about */
+#about {
+}
 
 .aboutContent {
   width: 750px;
 }
 
+.aboutContent b {
+  color: #ff6b72;
+}
+
 .portrait {
-  padding: 15px 15px 10px 15px;
   background: #74d0d3;
+  padding: 15px;
 }
 
 .portrait img {
@@ -362,10 +368,9 @@ ul {
 }
 
 .aboutDesc {
-  width: 500px;
-  background: #74d0d3;
   margin: 10px;
   padding: 2px 15px 2px 15px;
+  background: #74d0d3;
 }
 
 
@@ -426,14 +431,17 @@ ul {
   }
 
   .portrait {
-    width: 50%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 10px;
   }
   
   .aboutDesc {
-    width: auto;
+    width: 80%;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
  
 }
