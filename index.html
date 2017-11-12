@@ -8,20 +8,45 @@
 	<!-- STYLESHEETS USED -->
 	<link rel="stylesheet" type="text/css" href="style.css">
   
-  <!-- Google Font APIs -->
-  <link href="https://fonts.googleapis.com/css?family=Abel|Karla:400,400i,700,700i" rel="stylesheet">
+  	<!-- Google Font APIs -->
+  	<link href="https://fonts.googleapis.com/css?family=Abel|Karla:400,400i,700,700i" rel="stylesheet">
 
-  <!-- JS -->
-  <script>  
-  function openDisplay() {
-  	document.getElementById("navMenu").style.height = "100%";
-  }
+ 	<!-- JS -->
+  	<script>  
   
-  function closeDisplay() {
-  	document.getElementById("navMenu").style.height = "0%";
-  }
+	  	function toggleDisplay() {
+	  		if (document.getElementById("navMenu").style.height == "100%") {
+		    	document.getElementById("navMenu").style.height = "0%";
+		    } else {
+	 		   	document.getElementById("navMenu").style.height = "100%";
+	 	   }
+		}
+
+		function toggleMRpage() {
+		  	if (document.getElementById("MRpage").style.height == "100%") {
+	 		   	document.getElementById("MRpage").style.height = "0%";
+	 	    } else {
+	   		 	document.getElementById("MRpage").style.height = "100%";
+	   		}
+		}
+
+	    function toggleASHpage() {
+	  		if (document.getElementById("ASHpage").style.height == "100%") {
+	   		 	document.getElementById("ASHpage").style.height = "0%";
+	   		} else {
+	    		document.getElementById("ASHpage").style.height = "100%";
+	   		}
+	  	}
+
+	  	function toggleLKpage() {
+	  		if (document.getElementById("LKpage").style.height == "100%") {
+	    		document.getElementById("LKpage").style.height = "0%";
+	    	} else {
+	    		document.getElementById("LKpage").style.height = "100%";
+	    	}
+	  	}
   
-  </script>
+	</script>
 	
 	<title>Audrey Ryan</title>
 </head>
@@ -29,163 +54,191 @@
 
 <body>
 
-  <header>Audrey Ryan</header>
+	<header>Audrey Ryan</header>
 
 	<!-- NAVIGATION -->
 	<nav>
   
-  <!-- bigger displays use bar -->
+	<!-- desktop navigation bar -->
     <section class="navBar">
-      <a href="index.html">home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="#skills">what i offer</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="#portfolio">portfolio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="#about">about</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="#contact">contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<a href="index.html">home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    	<a href="#skills">what i offer</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    	<a href="#portfolio">portfolio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    	<a href="#about">about</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    	<a href="#contact">contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
     </section>
     
-    <!-- responsive menu -->
-    <div class="openButton" onclick="openDisplay()">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
+    <!-- responsive menu: button opens/closes full screen menu -->
+
+    <!-- open button -->
+    <article class="openButton" onclick="toggleDisplay()">
+        <article class="bar1"></article>
+        <article class="bar2"></article>
+        <article class="bar3"></article>
+    </article>
     
+    <!-- full-screen menu-->
     <section id="navMenu" class="display">
-      <a href="javascript:void(0)" onclick="closeDisplay()" class="closeButton">&times;</a>
+
+    	<!-- close button -->
+    	<a href="javascript:void(0)" onclick="toggleDisplay()" class="closeButton">&times;</a>
        
-       <div class="displayLinks">
-       <a href="index.html" onclick="closeDisplay()">Home</a>
-       <a href="#skills" onclick="closeDisplay()">What I Offer</a>
-       <a href="#portfolio" onclick="closeDisplay()">Porfolio</a>
-       <a href="#about" onclick="closeDisplay()">About</a>
-       <a href="#contact" onclick="closeDisplay()">Contact</a>
-       </div>
+       	<!-- menu links -->
+    	<article class="displayLinks">
+    		<a href="index.html" onclick="toggleDisplay()">Home</a>
+       		<a href="#skills" onclick="toggleDisplay()">What I Offer</a>
+       		<a href="#portfolio" onclick="toggleDisplay()">Porfolio</a>
+       		<a href="#about" onclick="toggleDisplay()">About</a>
+      		<a href="#contact" onclick="toggleDisplay()">Contact</a>
+        </article>
        
     </section>
     
 	</nav>
 
+
   <main>
-    <!-- intro blurb -->
+    <!-- intro blurb (under header) -->
     <section class="intro">
       <p>this is an intro blurb</p>
     </section>
+
     
-  	<!-- SECTION: skills -->
+  	<!-- SECTION: skills (called "What I Offer") -->
     <section id="skills">
-      <h1>What I Offer</h1>
+    	<h1>What I Offer</h1>
       
-      <section class="skillsContent">
+      	<!-- Container for boxes/cards -->
+      	<section class="skillsContent">
       
-        <article class="skillCardWhite">
-          <h2>Code</h2>
-          <p>
-          Java, C++, Python, HTML5, CSS3, Javascript
-          </p>
-        </article>
-        
-        <article class="skillCardPink">
-          <h2>UX</h2>
-          <p>
-          Software requirements gathering, documentation, user stories, UML, mock-ups
-          </p>
-        </article>
-        
-        <article class="skillCardWhite">
-          <h2>Design</h2>
-          <p>
-          Web design, digital tools Adobe Photoshop CS5 and CS6, Blender
-          </p>
-        </article>
-        
-        <article class="skillCardPink">
-          <h2>Project Management</h2>
-          <p>
-          Project leader experience, communication skills, 
-          </p>
-        </article>
-        
-        <article class="skillCardWhite">
-          <h2>Creativity</h2>
-          <p>
-          Driven to create designs, art, and media in digital and traditional mediums
-          </p>
-        </article>
+        	<article class="skillCardWhite">
+        		<h2>Code</h2>
 
-        <article class="skillCardPink">
-          <h2>Tenacity</h2>
-          <p>
-          Eager to learn and master any technical and creative skills
-          </p>
-        </article>
+          		<p>
+          			Java, C++, Python, HTML5, CSS3, Javascript
+          		</p>
+        	</article>
         
-      </section>
+       		<article class="skillCardPink">
+        		<h2>UX</h2>
+         		
+         		<p>
+          			Software requirements gathering, documentation, user stories, UML, mock-ups
+          		</p>
+        	</article>
+        
+        	<article class="skillCardWhite">
+          		<h2>Design</h2>
+          		
+          		<p>
+          			Web design, digital tools Adobe Photoshop CS5 and CS6, Blender
+          		</p>
+        	</article>
+        
+        	<article class="skillCardPink">
+          		<h2>Project Management</h2>
+          		
+          		<p>
+          			Project leader experience, communication skills, 
+          		</p>
+        	</article>
+        
+        	<article class="skillCardWhite">
+          		<h2>Creativity</h2>
+
+          		<p>
+          			Driven to create designs, art, and media in digital and traditional mediums
+          		</p>
+        	</article>
+
+        	<article class="skillCardPink">
+          		<h2>Tenacity</h2>
+
+          		<p>
+          			Eager to learn and master any technical and creative skills
+          		</p>
+        	</article>
+        
+      	</section>
   	</section>
-    
-    <!-- sec -->
-    <section id="portfolio">
-      <h1>Portfolio</h1>
-		  
-		  <h2>Software & UX Design</h2>
 
-		  <section class="UXContent">
+    
+    <!-- SECTION: portfolio -->
+    <section id="portfolio">
+    	<h1>Portfolio</h1>
+		
+		<!-- Software & UX section -->  
+		<h2>Software &amp; UX Design</h2>
+
+		<section class="UXContent">
+
+			<!-- Preview Cards -->
+		  	<article class="UXCard">
+          		<img src="https://github.com/ryanae/p/blob/master/IMGs/messengerredux.png?raw=true" alt="Messenger Redux"><br>
+          
+        		  	<article class="UXCardDesc">
+       			    	<h3>Messenger Redux</h3>
+            
+            			 <p>
+            				A redesign of Facebook's mobile messenger app that reaccentuates the purpose of the app: messaging.
+            		 	</p>
+            
+            	  		<article class="UXCardLink">
+              				<a href="javascript:void(0)">See more</a>
+           				</article>
+     
+          			</article>
+		  	</article>
+
 
 		  	<article class="UXCard">
-          <img src="https://github.com/ryanae/p/blob/master/IMGs/messengerredux.png?raw=true" alt="Messenger Redux"><br>
+          		<img src="https://github.com/ryanae/p/blob/master/IMGs/ASH.png?raw=true" alt="ASH"><br>
           
-          <article class="UXCardDesc">
-            <h3>
-            Messenger Redux
-            </h3>
+        			<article class="UXCardDesc">
+       			    	<h3>Anteaters Stop Hunger</h3>
             
-            <p>
-            well then wtf happens if i write a really long description tdfkglsdjglkfjdgsl
-            </p>
+            			 <p>
+            				A software system built to connect University of California, Irvine and local food shelters to reduce food waste and stop hunger.
+            		 	</p>
             
-            <article class="UXCardLink">
-              <a href="javascript:void(0)">See more</a>
-            </article>
+            	  		<article class="UXCardLink">
+              				<a href="javascript:void(0)">See more</a>
+           				</article>
      
-          </article>
+          			</article>
 		  	</article>
 
-        <article class="UXCard">
-        <img src="https://github.com/ryanae/p/blob/master/IMGs/ASH.png?raw=true" alt="ASH"><br>
-        
-        <article class="UXCardDesc">
-          <h3>
-          Anteaters Stop Hunger
-          </h3>
-          
-          <p>
-          beep beep richie i do like jsfiddle actually dskfjlakdsfjklsdfla
-          </p>
-          
-          <article class="UXCardLink">
-              <a href="javascript:void(0)">See more</a>
-          </article>
-        </article>
-      </article>
-      
-      
-      
-        
-        
-		  		<h2>
-          Art & Photography Gallery
-          </h2>
 
-		  <section class="gallery">
+		  	<article class="UXCard">
+          		<img src="https://github.com/ryanae/p/blob/master/IMGs/lyftkids.png?raw=true" alt="LyftKids"><br>
+          
+        		  	<article class="UXCardDesc">
+       			    	<h3>Lyft Kids</h3>
+            
+            			 <p>
+            				A mobile app design for a shuttle service made for busy parents and their children.
+            		 	</p>
+            
+            	  		<article class="UXCardLink">
+              				<a href="javascript:void(0)">See more</a>
+           				</article>
+     
+          			</article>
+		  	</article>
 
-		  	<article class ="pic">
+		  	<!-- Pages that preview card links lead to -->
+		  	<article id="MRpage" class="MRdisplay">
+
+
+		  		<article class="MRcontent">
+		  		</article>
 
 		  	</article>
-		  </section>
 
 
     </section>
     
-     <section id="about">
+    <section id="about">
       <h1>
       About
       </h1>

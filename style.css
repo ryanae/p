@@ -292,10 +292,33 @@ nav {
   margin-bottom: -2px;
 }
 
-.UXCardLink, .UXCardLink a {
+.seeMoreButton, .seeMoreButton a {
   text-align: right;
   color: #fff;
   text-decoration: none;
+}
+
+/* MR, ASH, LK pages */
+.MRdisplay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: -10px;
+  left: 0px;
+  background: #74d0d3;
+  overflow-y: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;	
+}
+
+.MRpage {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  height: auto;
 }
 
 /**
@@ -312,10 +335,8 @@ nav {
 
 **/
 
-/* RESPONSIVE: PHONES */
-
-@media all and (max-width: 690px) {  
-
+/* RESPONSIVE: smaller phones */
+@media all and (max-width: 480px) {
 	main {
 		width: auto;
 	}
@@ -329,9 +350,58 @@ nav {
     display: none;
   }
   
+  .openButton {
+    z-index: 1;
+  }
+  
+  .display {
+    overflow: auto;
+  }
+  
+  /* Identical flex containers */
+  .skillsContent, .UXContent, .gallery {
+    display: block;
+    width: auto;
+  }
+  
+  .skillCardWhite, .skillCardPink {
+    width: auto;
+    margin: 10px;
+  }
+  
+  .UXCard {
+    width: auto;
+  }
+  
+  .UXCardDesc {
+    width: 100%;
+  }
+  
+  .UXCard img {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+  }
+}
+
+/* RESPONSIVE: big phones, small tablets */
+
+@media all and (min-width: 480px) and (max-width: 690px) {  
+
 	main {
 		width: auto;
 	}
+  
+  header {
+    margin-top: 50px;
+    font-size: 65px;
+  }
+  
+  .navBar {
+    display: none;
+  }
   
   .display {
     overflow: auto;
@@ -364,7 +434,7 @@ nav {
   
 }
 
-/* RESPONSIVE: TABLETS */
+/* RESPONSIVE: tablets, small laptops */
 
 @media all and (min-width: 691px) and (max-width: 1200px) {  
   header {
@@ -407,7 +477,7 @@ nav {
   }
 }
 
-/* RESPONSIVE: DESKTOP */
+/* RESPONSIVE: standard desktop */
 
 @media all and (min-width: 1201px) and (max-width: 1920px) {  
   header {
