@@ -57,7 +57,7 @@ ul {
 /* bar used for desktop displays */
 .navBar {
   position: fixed;
-  top: -10px;
+  top: -50px;
   width: 100%;
   height: 15px;
   padding: 10px;
@@ -178,6 +178,7 @@ ul {
 /* SECTION: skills */
 .skillsContent {
   width: 750px;
+  margin-top: -10px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -239,6 +240,7 @@ ul {
 .UXContent, .gallery {
   display: flex;
   width: 750px;
+  margin-top: -10px;
   margin-left: auto;
   margin-right: auto;
   align-items: stretch;
@@ -484,6 +486,26 @@ ul {
     margin-right: auto;
   }
   
+  .aboutContent {
+    width: auto;
+    display: inline-block;
+    margin-top: -30px;
+    padding-top: -15px;
+  }
+  
+  .portrait {
+    width: 40%;
+    float: left;
+    padding: 0px 10px 0px 10px;
+  }
+  
+  .aboutDesc {
+    width: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 
 /* RESPONSIVE: tablets, small laptops */
@@ -551,6 +573,27 @@ ul {
     text-decoration: none;
     font-weight: bold;
     background: transparent;
+  }
+  
+  .aboutContent {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: -30px;
+    padding-top: -15px;
+  }
+  
+  .portrait {
+    width: 30%;
+    float: left;
+    padding: 0px 10px 0px 15px;
+  }
+  
+  .aboutDesc {
+    width: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -621,5 +664,26 @@ ul {
     -ms-opacity: 1;
     -o-opacity: 1;
     opacity: 1;
+  }
+  
+  .aboutContent {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: -30px;
+    padding-top: -15px;
+  }
+  
+  .portrait {
+    width: 50%;
+    float: left;
+    padding: 0px 10px 0px 15px;
+  }
+  
+  .aboutDesc {
+    width: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
