@@ -1,10 +1,10 @@
 /* GENERAL STYLING */
 
 body {
-	background: #a2e5e4;
+  background: #a2e5e4;
   color: #fff;
-	font-family: 'Karla', helvetica, sans-serif;
-	font-size: 14px;
+  font-family: 'Karla', helvetica, sans-serif;
+  font-size: 14px;
   margin: 0px;
 }
 
@@ -17,10 +17,10 @@ main {
 
 header {
   color: #fff;
-	font-size: 120px;
+  font-size: 120px;
   font-family: 'Abel', helvetica, sans-serif;
   font-weight: bold;
-	letter-spacing: -2px;
+  letter-spacing: -2px;
   text-align: center;
   cursor: default;
 }
@@ -255,21 +255,6 @@ nav {
   max-height: 100%;
   max-width: 100%;
   border-radius: 50%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-opacity: 0.7;
-  -moz-opacity: 0.7;
-  -ms-opacity: 0.7;
-  -o-opacity: 0.7;
-  opacity: 0.7;
-}
-
-.UXCard img:hover {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  -ms-opacity: 1;
-  -o-opacity: 1;
-  opacity: 1;
 }
 
  .UXCardDesc {
@@ -296,30 +281,66 @@ nav {
   text-align: right;
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.closePage {
+  padding: 8px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #ff6b72;
+  background: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.seeFullDocButton, .seeFullDocButton a {
+  margin: 10px;
+  text-align: right;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff6b72;
 }
 
 /* MR, ASH, LK pages */
-.MRdisplay {
+.pageDisplay {
   height: 0%;
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: -10px;
+  top: 0px;
   left: 0px;
-  background: #74d0d3;
+  background: #fff;
+  color: #333;
   overflow-y: hidden;
   -webkit-transition: 0.5s;
-  transition: 0.5s;	
+  transition: 0.5s; 
 }
 
-.MRpage {
+.pageContent {
   position: relative;
   top: 15%;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
-  text-align: center;
+  padding-bottom: 10px;
+  width: 80%;
   height: auto;
 }
+
+.pageContent img {
+  border: 5px solid #eee;
+  max-height: 20%;
+  max-width: 20%;
+  float: left;
+  margin: 0px 15px 10px 0px;
+}
+
 
 /**
 
@@ -337,9 +358,9 @@ nav {
 
 /* RESPONSIVE: smaller phones */
 @media all and (max-width: 480px) {
-	main {
-		width: auto;
-	}
+  main {
+    width: auto;
+  }
   
   header {
     margin-top: 50px;
@@ -354,7 +375,7 @@ nav {
     z-index: 1;
   }
   
-  .display {
+  .display, .pageDisplay {
     overflow: auto;
   }
   
@@ -376,23 +397,16 @@ nav {
   .UXCardDesc {
     width: 100%;
   }
-  
-  .UXCard img {
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    -ms-opacity: 1;
-    -o-opacity: 1;
-    opacity: 1;
-  }
+ 
 }
 
 /* RESPONSIVE: big phones, small tablets */
 
 @media all and (min-width: 480px) and (max-width: 690px) {  
 
-	main {
-		width: auto;
-	}
+  main {
+    width: auto;
+  }
   
   header {
     margin-top: 50px;
@@ -403,7 +417,7 @@ nav {
     display: none;
   }
   
-  .display {
+  .display, .pageDisplay {
     overflow: auto;
   }
   
@@ -424,14 +438,6 @@ nav {
     margin-right: auto;
   }
   
-  .UXCard img {
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    -ms-opacity: 1;
-    -o-opacity: 1;
-    opacity: 1;
-  }
-  
 }
 
 /* RESPONSIVE: tablets, small laptops */
@@ -446,11 +452,11 @@ nav {
      display: none;
   }
   
-	main {
-		width: auto;
-	}
+  main {
+    width: auto;
+  }
   
-  .display {
+  .display, .pageDisplay {
     overflow: auto;
   }
   
@@ -464,22 +470,47 @@ nav {
     width: 40%;
   }
   
+  .UXContent {
+    display: block;
+    width: 90%;
+  }
+  
   .UXCard {
     width: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .UXCard img {
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-    -ms-opacity: 1;
-    -o-opacity: 1;
-    opacity: 1;
+    max-height: 25%;
+    max-width: 25%;
+    margin-bottom: 10px;
+  }
+  
+  .UXCardDesc {
+    width: 65%;
+    color: #ff6b72;
+    background: transparent;
+    font-size: 16px;
+    background: #fff;
+    padding: 0px 0px 0px 30px;
+    margin-top: -25px;
+  }
+  
+  .seeMoreButton, .seeMoreButton a {
+    text-align: right;
+    color: #ff6b72;
+    text-decoration: none;
+    font-weight: bold;
+    background: transparent;
   }
 }
 
-/* RESPONSIVE: standard desktop */
+/* RESPONSIVE: desktop */
 
-@media all and (min-width: 1201px) and (max-width: 1920px) {  
+@media all and (min-width: 1201px) {  
   header {
      margin-top: 100px;
      margin-bottom: 50px;
@@ -498,12 +529,51 @@ nav {
     margin: 15px;
     width: 25%;
   }
-}
-
-/* RESPONSIVE: BIGGER DESKTOPS */
-
-@media all and (min-width: 1921px) {
-    .openButton, #navMenu {
-     display: none;
+  
+  .UXContent {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .UXCard {
+    max-height: 210px;
+    width: 200px;
+    margin: 15px;
+  }
+  
+  .UXCardDesc {
+    height: 190px;
+    width: 100%;
+    position: relative;
+    top: -219px;
+    left: -15px;
+    padding: 20px 15px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+  }
+  
+  .UXCardDesc h3 {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  
+  .UXCardDesc:hover {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
   }
 }
