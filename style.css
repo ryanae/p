@@ -453,6 +453,15 @@ footer {
   font-size: 32px;
   text-decoration: none;
   color: #ff6b72;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#contact a:hover, a:active {
+  color: #333;
 }
 
 
@@ -581,14 +590,6 @@ footer {
     margin-right: auto;
   }
   
-  .aboutContent {
-    width: 90%;
-    display: inline-block;
-    margin-left: 5%;
-    margin-top: -30px;
-    padding-top: -15px;
-  }
-  
   .galleryPreviews {
     display: flex;
     justify-content: center;
@@ -605,6 +606,14 @@ footer {
   .galleryContent img {
     width: 100%;
     height: 50%;
+  }
+  
+.aboutContent {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: -30px;
+    padding-top: -15px;
   }
   
   .portrait {
@@ -647,7 +656,6 @@ footer {
     margin-bottom: 5px;
   }
   
-  /* Identical flex containers */
   .skillsContent, .UXContent, .galleryPreviews {
     width: auto;
   }
@@ -692,6 +700,24 @@ footer {
     text-decoration: none;
     font-weight: bold;
     background: transparent;
+  }
+  
+  .galleryPreviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: auto;
+  }
+  
+  .picPreview {
+    width: 25%;
+    margin: 5px;
+  }
+  
+  .galleryContent img {
+    width: 100%;
+    height: 50%;
   }
   
   .aboutContent {
@@ -761,11 +787,11 @@ footer {
     top: -219px;
     left: -15px;
     padding: 20px 15px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
     -webkit-opacity: 0;
     -moz-opacity: 0;
     -ms-opacity: 0;
@@ -784,6 +810,38 @@ footer {
     -ms-opacity: 1;
     -o-opacity: 1;
     opacity: 1;
+  }
+  
+  .galleryPreviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: auto;
+  }
+  
+  .picPreview {
+    width: 28%;
+    margin: 10px;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    -ms-opacity: 0.7;
+    -o-opacity: 0.7;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  
+  .picPreview:hover {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+  }
+  
+  .galleryContent img {
+    width: 100%;
+    height: 50%;
   }
   
   .aboutContent {
