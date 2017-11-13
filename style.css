@@ -526,6 +526,17 @@ NAVIGATION
 .portrait img {
   max-height: 100%;
   max-width: 100%;
+  border: 5px solid #EA3788;
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;  
+}
+
+.portrait img:hover {
+  border: 5px solid #F391A0;
 }
 
 .aboutDesc {
