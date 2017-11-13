@@ -45,6 +45,14 @@
           document.getElementById("LKpage").style.height = "100%";
         }
       }
+
+      function toggleGalleryPage() {
+        if (document.getElementById("galleryPage").style.height == "100%") {
+          document.getElementById("galleryPage").style.height = "0%";
+        } else {
+          document.getElementById("galleryPage").style.height = "100%";
+        }
+      }
   
   </script>
   
@@ -325,12 +333,114 @@
 
       <h2>Art &amp; Photography Gallery</h2>
 
-      <section class="galleryContent">
+      <section class="galleryPreviews">
 
-        <article class="pic">
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/rabbitPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/robinPreview.jpg?raw=true"></a>
         </article>
         
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/lakePreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/flowerPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/backyardPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/sunnyPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/leafPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/hollyPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/leavesPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/coverPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/moonPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/jelliesPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/fishPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/clownfishPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/newportPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/terrorPreview.jpg?raw=true"></a>
+        </article>
+        
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/wolvesPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/stagPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/medusaPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/kanedaPreview.jpg?raw=true"></a>
+        </article>
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="https://github.com/ryanae/p/blob/master/IMGs/otgwPreview.jpg?raw=true"></a>
+        </article>
+
+        
       </section>
+
+      <!-- Full size gallery display -->
+
+      <article id="galleryPage" class="galleryDisplay">
+
+        <!-- close button -->
+        <a href="javascript:void(0)" onclick="toggleGalleryPage()" class="closePage">Close</a><br>   
+
+        <article class="galleryContent">
+        <img src="https://github.com/ryanae/p/blob/master/IMGs/rabbit.JPG?raw=true">
+        <br>
+
+        <img src="https://raw.githubusercontent.com/ryanae/p/master/IMGs/moon.jpg">
+        <br>
+
+        <img src="https://github.com/ryanae/p/blob/master/IMGs/rabbit.JPG?raw=true">
+        <br>
+      </article>
+        
+      </article>
 
       </section>
 

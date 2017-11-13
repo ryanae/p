@@ -245,7 +245,7 @@ footer {
   text-align: center;
 }
 
-.UXContent, .gallery {
+.UXContent, .galleryContent {
   display: flex;
   width: 750px;
   margin-top: -10px;
@@ -354,6 +354,57 @@ footer {
   margin: 0px 15px 10px 0px;
 }
 
+/* gallery */
+.galleryPreviews {
+  margin-top: -10px;
+}
+.picPreview {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  padding: 10px 10px 5px 10px;
+  margin: 15px;
+}
+
+.picPreview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* full gallery */
+.galleryDisplay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  color: #333;
+  overflow-y: scroll;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; 
+}
+
+.galleryContent {
+  position: relative;
+  top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  width: 80%;
+  height: auto;
+}
+
+.galleryContent img {
+  border: 8px solid #eee;
+  margin: 10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 
 /* Section: about */
 #about {
@@ -449,8 +500,7 @@ footer {
     overflow: auto;
   }
   
-  /* Identical flex containers */
-  .skillsContent, .UXContent, .gallery, .aboutContent {
+  .skillsContent, .UXContent, .galleryPreviews, .aboutContent {
     display: block;
     width: auto;
   }
@@ -460,12 +510,17 @@ footer {
     margin: 10px;
   }
   
-  .UXCard {
+  .UXCard, .picPreview {
     width: auto;
   }
   
   .UXCardDesc {
     width: 100%;
+  }
+  
+  .galleryContent img {
+    width: 100%;
+    height: 50%;
   }
 
   .portrait {
@@ -510,8 +565,7 @@ footer {
     margin-bottom: 5px;
   }
   
-  /* Identical flex containers */
-  .skillsContent, .UXContent, .gallery {
+  .skillsContent, .UXContent {
     display: block;
     width: auto;
   }
@@ -533,6 +587,24 @@ footer {
     margin-left: 5%;
     margin-top: -30px;
     padding-top: -15px;
+  }
+  
+  .galleryPreviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: auto;
+  }
+  
+  .picPreview {
+    width: 40%;
+    margin: 5px;
+  }
+  
+  .galleryContent img {
+    width: 100%;
+    height: 50%;
   }
   
   .portrait {
@@ -576,7 +648,7 @@ footer {
   }
   
   /* Identical flex containers */
-  .skillsContent, .UXContent, .gallery {
+  .skillsContent, .UXContent, .galleryPreviews {
     width: auto;
   }
   
@@ -647,6 +719,7 @@ footer {
 /* RESPONSIVE: desktop */
 
 @media all and (min-width: 1201px) {  
+  
   header {
      margin-top: 100px;
      margin-bottom: 50px;
@@ -657,7 +730,7 @@ footer {
   }
   
   /* Identical flex containers */
-  .skillsContent, .UXContent, .gallery {
+  .skillsContent, .UXContent, .galleryPreviews {
     width: auto;
   }
   
