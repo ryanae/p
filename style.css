@@ -308,8 +308,7 @@ NAVIGATION
 
 #portfolio h2 {
   color: #ff6b72;
-  font-family: 'Abel', helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   text-align: center;
 }
@@ -572,6 +571,9 @@ SECTION: Contact
   transition: 0.5s;
 }
 
+#contact a:hover, #contact a:active {
+  color: #333;
+}
 
 /**
 
