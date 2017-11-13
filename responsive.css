@@ -1,0 +1,463 @@
+/*
+
+  (c) Audrey Ryan - 2017
+
+*/
+
+
+/* 
+
+  Responsive Styling
+
+*/
+
+
+/* 
+
+  Standard/Smaller Phones
+  0px - 480px
+
+*/
+
+@media all and (max-width: 480px) {
+  
+  main {
+    width: auto;
+  }
+  
+  header {
+    margin-top: 50px;
+    font-size: 65px;
+  }
+  
+  /* navigation */
+  .navBar {
+    display: none;
+  }
+  
+  .openButton {
+    z-index: 1;
+  }
+  
+  .display, .pageDisplay {
+    overflow: auto;
+  }
+  
+  /* change display for skills, portfolio, about */
+  .skillsContent, .UXContent, .galleryPreviews, .aboutContent {
+    width: auto;
+    display: block;
+  }
+  
+  /* Portfolio - UX */
+  .skillCardWhite, .skillCardPink {
+    margin: 10px;
+    width: auto;
+  }
+  
+  .UXCard, .picPreview {
+    width: auto;
+  }
+  
+  .UXCardDesc {
+    width: 100%;
+  }
+  
+  /* Portfolio - Gallery */
+  .galleryContent img {
+    width: 100%;
+    height: 50%;
+  }
+
+  /* about */
+  .portrait {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    width: 80%;
+  }
+  
+  .aboutDesc {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+ 
+}
+
+/* 
+
+  Bigger phones, small tablets
+  481px - 690px
+
+*/
+
+@media all and (min-width: 481px) and (max-width: 690px) {  
+
+  main {
+    width: auto;
+  }
+  
+  header {
+    margin-top: 50px;
+    font-size: 80px;
+  }
+  
+  /* navigation */
+  .navBar {
+    display: none;
+  }
+  
+  .display, .pageDisplay {
+    overflow-y: scroll;
+  }
+  
+  /* intro */
+  .intro {
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+  
+  /* skills and UX contents use same container */
+  .skillsContent, .UXContent {
+    display: block;
+    width: auto;
+  }
+  
+  .skillCardWhite, .skillCardPink {
+    width: auto;
+    margin: 10px;
+  }
+  
+  /* Portfolio - UX */
+  .UXCard {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pageContent img {
+    width: 40%;
+  }
+  
+  /* Portfolio - Gallery */
+  .galleryPreviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: auto;
+  }
+  
+  .picPreview {
+    width: 40%;
+    margin: 5px;
+  }
+  
+  .galleryContent img {
+    width: 100%;
+    height: 50%;
+  }
+  
+  /* about */
+  .aboutContent {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: -30px;
+    padding-top: -15px;
+  }
+  
+  .portrait {
+    width: 40%;
+    float: left;
+    padding: 0px 10px 0px 10px;
+  }
+  
+  .aboutDesc {
+    width: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+/* 
+
+  Standard/big Tablets, small desktops
+  691px - 1200px
+
+*/
+
+@media all and (min-width: 691px) and (max-width: 1200px) { 
+
+  main {
+    width: auto;
+  }
+
+  header {
+    margin-top: 50px;
+    font-size: 90px;
+  }
+  
+  /* navigation */
+  .navBar {
+     display: none;
+  }
+  
+  .display, .pageDisplay {
+    overflow-y: scroll;
+  }
+  
+  /* intro */
+  .intro {
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+  
+  /* skills, UX, gallery previews */
+  .skillsContent, .UXContent, .galleryPreviews {
+    width: auto;
+  }
+  
+  /* skills */
+  .skillCardWhite, .skillCardPink {
+    margin: 10px;
+    width: 40%;
+  }
+  
+  /* Portfolio - UX */
+  .UXContent {
+    display: block;
+    width: 90%;
+  }
+  
+  .UXCard {
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .UXCard img {
+    max-height: 25%;
+    max-width: 25%;
+    margin-bottom: 10px;
+  }
+  
+  .UXCardDesc {
+    width: 65%;
+    color: #ff6b72;
+    background: transparent;
+    font-size: 16px;
+    background: #fff;
+    padding: 0px 0px 0px 30px;
+    margin-top: -25px;
+  }
+  
+  .seeMoreButton, .seeMoreButton a {
+    text-align: right;
+    color: #ff6b72;
+    text-decoration: none;
+    font-weight: bold;
+    background: transparent;
+  }
+  
+  /* Portfolio - Gallery */
+  .galleryPreviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: auto;
+  }
+  
+  .picPreview {
+    width: 25%;
+    margin: 5px;
+  }
+  
+  .galleryContent img {
+    width: 100%;
+    height: 50%;
+  }
+  
+  /* about */
+  .aboutContent {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: -30px;
+    padding-top: -15px;
+  }
+  
+  .portrait {
+    width: 28%;
+    float: left;
+    padding: 0px 10px 0px 15px;
+  }
+  
+  .aboutDesc {
+    width: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* 
+
+  Desktop
+  1201px - a lot more
+
+*/
+
+@media all and (min-width: 1201px) {  
+  
+  body {
+    background: #fff;
+  }
+  
+  main {
+    background: #a2e5e4;
+    padding-bottom: 50px;
+  }
+  
+  header {
+     padding-top: 100px;
+     padding-bottom: 50px;
+     margin-left: auto;
+     margin-right: auto;
+     width: 820px;
+     background: #a2e5e4;
+  }
+
+  footer {
+    margin-top: 0px;
+  }
+  
+  /* navigation */
+  .openButton, #navMenu {
+     display: none;
+  }
+
+  .skillsContent, .UXContent, .galleryPreviews {
+    width: auto;
+  }
+  
+  /* skills */
+  .skillCardWhite, .skillCardPink {
+    margin: 15px;
+    width: 25%;
+  }
+  
+  /* portfolio - UX content */
+  .UXContent {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .UXCard {
+    max-height: 210px;
+    width: 200px;
+    margin: 15px;
+  }
+  
+  .UXCardDesc {
+    height: 190px;
+    width: 100%;
+    position: relative;
+    top: -219px;
+    left: -15px;
+    padding: 20px 15px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+  }
+  
+  .UXCardDesc h3 {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  
+  .UXCardDesc:hover {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+  }
+
+  .pageContent, .pageContent img {
+    width: 70%;
+  }
+  
+  /* Portfolio - Gallery */
+  .galleryPreviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: auto;
+  }
+  
+  .picPreview {
+    width: 28%;
+    margin: 10px;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    -ms-opacity: 0.7;
+    -o-opacity: 0.7;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  
+  .picPreview:hover {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+  }
+  
+  .galleryContent img {
+    width: 100%;
+    height: 50%;
+  }
+  
+  /* About */
+  .aboutContent {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: -30px;
+    padding-top: -15px;
+  }
+  
+  .portrait {
+    width: 33%;
+    float: left;
+    padding: 0px 10px 0px 15px;
+  }
+  
+  .aboutDesc {
+    width: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
