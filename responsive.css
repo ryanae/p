@@ -453,11 +453,11 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: stretch;
-    width: auto;
+    width: 790px;
   }
   
   .picPreview {
-    width: 28%;
+    width: 20%;
     margin: 10px;
 
     -webkit-transition: 0.5s;
