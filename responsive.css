@@ -199,7 +199,7 @@
   }
   
   .portrait {
-    width: 50%;
+    width: 40%;
     float: left;
     padding: 0px 10px 0px 10px;
   }
@@ -325,7 +325,6 @@
   .portrait {
     width: 28%;
     float: left;
-    padding: 0px 10px 0px 15px;
   }
   
   .aboutDesc {
