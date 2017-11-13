@@ -1,16 +1,42 @@
-/* GENERAL STYLING */
+/*
+
+  (c) Audrey Ryan - 2017
+
+*/
+
+
+/* 
+
+  General Styling 
+
+*/
 
 body {
+  margin: 0px;
   background: #a2e5e4;
   color: #fff;
   font-family: 'Karla', helvetica, sans-serif;
   font-size: 14px;
-  margin: 0px;
+}
+
+a, a:visited {
+  color: #fff;
+  text-decoration: none;
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover, a:active {
+  color: #333;
 }
 
 main {
-  padding: 10px;
   width: 800px;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -31,14 +57,18 @@ section {
 }
 
 h1 {
+  padding-left: 20px;
+  background: #74d0d3;
   font-family: 'Abel', helvetica, sans-serif;
   font-weight: bold;
   font-size: 36px;
   border-left: 12px #ff6b72 solid;
-  padding-left: 20px;
+
   -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
-  background: #74d0d3;
 }
 
 h1:hover {
@@ -51,80 +81,81 @@ ul {
 }
 
 footer {
+  padding: 3px;
+  margin-top: 60px;
+  background: #ff6b72;
   text-align: center;
   text-transform: uppercase;
   font-size: 11px;
   color: #fff;
   font-weight: bold;
-  padding: 3px;
-  margin-top: 60px;
-  background: #ff6b72;
 }
 
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
 
-footer a:hover {
-  color: #333;
-}
+/* 
 
-/* bar used for desktop displays */
+NAVIGATION 
+
+*/
+
+/* bigger displays use bar */
 .navBar {
   position: fixed;
   top: -50px;
-  width: 100%;
-  height: 15px;
-  padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  z-index: 1;
   display: block;
+  height: 15px;
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
   background: #333;
   text-align: center;
 }
 
 .navBar a {
-  color: #fff;
-  text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  -webskit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .navBar a:hover, .navBar a:active {
   color: #ff6b72;
 }
 
-/* menu used for smaller screens */
 
-  /* full screen menu */
+/* full screen menu toggled by button used for smaller screens */
+
+/* full screen menu background/overlay */
 .display {
-  height: 0%;
-  width: 100%;
   position: fixed;
-  z-index: 1;
   top: -50px;
   left: 0px;
+  height: 0%;
+  width: 100%;
+  z-index: 1;
   background: #74d0d3;
   overflow-y: scroll;
+
   -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
+
+/* content displayed on the menu */
 .displayLinks {
   position: relative;
   top: 15%;
-  width: 100%;
   margin-top: 30px;
-  text-align: center;
+  width: 100%;
   height: auto;
+  text-align: center;
 }
 
-.displayLinks a {
+.displayLinks a, .displayLinks a:visited {
   display: block;
   padding: 5px;
   font-family: 'Abel', helvetica, sans-serif;
@@ -132,15 +163,13 @@ footer a:hover {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .displayLinks a:hover, .displayLinks a:active {
   color: #ff6b72;
 }
 
-  /* open button */
+/* open button class */
 .openButton {
   padding: 3px;
   float: right;
@@ -150,34 +179,46 @@ footer a:hover {
   display: block;
 }
 
+/* actual button itself is made of three bars */
 .bar1, .bar2, .bar3 {
-  background: #333;
   width: 30px;
   height: 3px;
   margin: 6px 0px;
+  background: #333;
 }
 
-  /* close button */
+/* close button */
 .closeButton {
-  height: 30px;
-  width: 30px;
-  background: #fff;
   position: absolute;
   top: 30px;
   right: 30px;
+  padding-bottom: 1px;
+  height: 30px;
+  width: 30px;
+  background: #fff;
   color: #ff6b72;
   text-decoration: none;
   font-weight: bold;
   font-size: 25px;
   text-align: center;
-  padding-bottom: 1px;
 }
 
-/* intro blurb */
+
+/* 
+
+  Section - intro (blurb)
+
+ */
+
 .intro {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  margin-bottom: 30px;
   display: block;
   padding: 5px;
   width: 35%;
+
   background: #ff6b72;
   color: #a2e5e4;
   text-align: center;
@@ -185,25 +226,29 @@ footer a:hover {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 8px;
-  margin-bottom: 30px;
   cursor: default;
 }
 
-/* SECTION: skills */
+
+/* 
+
+  SECTION - skills 
+
+*/
+
+/* container for all content in this section */
 .skillsContent {
-  width: 750px;
   margin-top: -10px;
   margin-left: auto;
   margin-right: auto;
+  width: 750px;
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* note: skill cards identical except for color scheme (white/pink) */
 .skillCardWhite h2, .skillCardPink h2 {
   margin-top: 20px;
   font-size: 30px;
@@ -220,9 +265,14 @@ footer a:hover {
   font-size: 14px;
   line-height: 20px;  
   text-align: center;
+
   background: #fff;
   color: #ff6b72;
+
   -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
 }
 
@@ -233,9 +283,14 @@ footer a:hover {
   font-size: 14px;
   line-height: 20px;  
   text-align: center;
+
   background: #ff6b72;
   color: #fff;
+
   -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
 }
 
@@ -245,7 +300,12 @@ footer a:hover {
 }
 
 
-/* SECTION: portfolio */
+/* 
+
+  SECTION - portfolio 
+
+*/
+
 #portfolio h2 {
   color: #ff6b72;
   font-family: 'Abel', helvetica, sans-serif;
@@ -254,21 +314,26 @@ footer a:hover {
   text-align: center;
 }
 
+/* UX and gallery sections use same container */
 .UXContent, .galleryContent {
-  display: flex;
-  width: 750px;
   margin-top: -10px;
   margin-left: auto;
   margin-right: auto;
+  width: 750px;
+
+  display: flex;
   align-items: stretch;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* UX portfolio section */
+
+/* each preview UX card contains an img and description article */
 .UXCard {
-  width: 275px;
   padding: 15px 15px 5px 15px;
   margin: 20px;
+  width: 275px;
   background: #fff;
   color: #333;
 }
@@ -276,36 +341,41 @@ footer a:hover {
 .UXCard img {
   max-height: 100%;
   max-width: 100%;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
 }
 
- .UXCardDesc {
-   background: #ff6b72;
-   color: #fff;
-   display: inline-block;
-   padding: 5px 15px 15px 15px;
-   width: 320px;
-   position: relative;
-   bottom: -10px;
-   left: -15px;
+.UXCardDesc {
+  position: relative;
+  bottom: -10px;
+  left: -15px;
+  padding: 5px 15px 15px 15px;
+  width: 320px;
+  display: inline-block;
+  background: #ff6b72;
+  color: #fff;
 }
 
 .UXCardDesc h3 {
+  margin-top: 3px;
+  margin-bottom: -2px;
   font-family: 'Abel', helvetica, sans-serif;
   font-weight: bold;
   font-size: 28px;
   text-align: center;
-  margin-top: 3px;
-  margin-bottom: -2px;
 }
 
+/* see more button/link */
 .seeMoreButton, .seeMoreButton a {
   text-align: right;
-  color: #fff;
-  text-decoration: none;
   font-weight: bold;
 }
 
+/* close page button - for UX cards */
 .closePage {
   padding: 8px;
   position: absolute;
@@ -321,29 +391,34 @@ footer a:hover {
   text-align: center;
 }
 
+/* see full documentation button/link */
 .seeFullDocButton, .seeFullDocButton a {
   margin: 10px;
-  text-align: right;
-  text-decoration: none;
   font-weight: bold;
   color: #ff6b72;
 }
 
-/* MR, ASH, LK pages */
+/* MR, ASH, LK pages - "see more" links lead to these pages */
+/* page background / display */
 .pageDisplay {
-  height: 0%;
-  width: 100%;
   position: fixed;
-  z-index: 1;
   top: 0px;
   left: 0px;
+  height: 0%;
+  width: 100%;
+  z-index: 1;
   background: #fff;
   color: #333;
   overflow-y: scroll;
+
   -webkit-transition: 0.5s;
-  transition: 0.5s; 
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
+/* page content goes on top of display */
 .pageContent {
   position: relative;
   top: 15%;
@@ -363,17 +438,24 @@ footer a:hover {
   margin: 0px 15px 10px 0px;
 }
 
-/* gallery */
+/* gallery portfolio section */
+/* gallery previews is the main section displayed on portfolio */
 .galleryPreviews {
   margin-top: -10px;
 }
+
+/********** PROBLEM AREA????????? 
+
+conflicting margins?
+
+**********/
 .picPreview {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  background: white;
   padding: 10px 10px 5px 10px;
   margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  background: white;
 }
 
 .picPreview img {
@@ -381,20 +463,33 @@ footer a:hover {
   max-height: 100%;
 }
 
-/* full gallery */
+/* Full screen gallery that displays when any preview pic is clicked, 
+   works same as other full screen pages */
 .galleryDisplay {
-  height: 0%;
-  width: 100%;
   position: fixed;
-  z-index: 1;
   top: 0px;
   left: 0px;
+  height: 0%;
+  width: 100%;
+  z-index: 1;
   background: #fff;
   color: #333;
   overflow-y: scroll;
+
   -webkit-transition: 0.5s;
-  transition: 0.5s; 
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
+
+/* content displayed on gallery page */
+
+/********** PROBLEM AREA????????? 
+
+conflicting margins?
+
+**********/
 
 .galleryContent {
   position: relative;
@@ -408,16 +503,18 @@ footer a:hover {
 }
 
 .galleryContent img {
-  border: 8px solid #eee;
   margin: 10px;
   max-width: 100%;
   max-height: 100%;
+  border: 8px solid #eee;
 }
 
 
-/* Section: about */
-#about {
-}
+/* 
+
+  Section - about 
+
+*/
 
 .aboutContent {
   width: 750px;
@@ -428,8 +525,8 @@ footer a:hover {
 }
 
 .portrait {
-  background: #74d0d3;
   padding: 15px;
+  background: #74d0d3;
 }
 
 .portrait img {
@@ -444,7 +541,12 @@ footer a:hover {
 }
 
 
-/* SECTION: Contact */
+/* 
+
+SECTION: Contact 
+
+*/
+
 #contact {
   text-align: center;
   width: auto;
@@ -462,15 +564,12 @@ footer a:hover {
   font-size: 32px;
   text-decoration: none;
   color: #ff6b72;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
 
-#contact a:hover, a:active {
-  color: #333;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 
