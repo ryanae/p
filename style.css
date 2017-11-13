@@ -61,6 +61,15 @@ footer {
   background: #ff6b72;
 }
 
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #333;
+}
+
 /* bar used for desktop displays */
 .navBar {
   position: fixed;
@@ -878,7 +887,7 @@ footer {
   }
   
   .portrait {
-    width: 45%;
+    width: 33%;
     float: left;
     padding: 0px 10px 0px 15px;
   }
