@@ -50,8 +50,15 @@ ul {
   list-style-position: inside;
 }
 
-.noScroll {
-  overflow: hidden;
+footer {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px;
+  margin-top: 60px;
+  background: #ff6b72;
 }
 
 /* bar used for desktop displays */
@@ -171,6 +178,7 @@ ul {
   letter-spacing: 1px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 8px;
   margin-bottom: 30px;
   cursor: default;
 }
@@ -376,7 +384,35 @@ ul {
 }
 
 
+/* SECTION: Contact */
+#contact {
+  text-align: center;
+  width: auto;
+  color: #333;
+}
+
+#contact h1 {
+  text-align: left;
+  color: #fff;
+}
+
+#contact a {
+  font-family: 'Abel', helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-decoration: none;
+  color: #ff6b72;
+}
+
+
 /**
+
+
+
+
+
+
+
 
 
 
@@ -458,7 +494,7 @@ ul {
   
   header {
     margin-top: 50px;
-    font-size: 65px;
+    font-size: 80px;
   }
   
   .navBar {
@@ -467,6 +503,11 @@ ul {
   
   .display, .pageDisplay {
     overflow-y: scroll;
+  }
+  
+  .intro {
+    margin-top: 40px;
+    margin-bottom: 5px;
   }
   
   /* Identical flex containers */
@@ -487,8 +528,9 @@ ul {
   }
   
   .aboutContent {
-    width: auto;
+    width: 90%;
     display: inline-block;
+    margin-left: 5%;
     margin-top: -30px;
     padding-top: -15px;
   }
@@ -513,7 +555,7 @@ ul {
 @media all and (min-width: 691px) and (max-width: 1200px) {  
   header {
     margin-top: 50px;
-    font-size: 80px;
+    font-size: 90px;
   }
   
   .navBar {
@@ -526,6 +568,11 @@ ul {
   
   .display, .pageDisplay {
     overflow-y: scroll;
+  }
+  
+  .intro {
+    margin-top: 40px;
+    margin-bottom: 5px;
   }
   
   /* Identical flex containers */
