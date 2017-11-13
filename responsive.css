@@ -460,17 +460,19 @@
     width: 28%;
     margin: 10px;
 
-    -webkit-opacity: 0.7;
-    -moz-opacity: 0.7;
-    -ms-opacity: 0.7;
-    -o-opacity: 0.7;
-    opacity: 0.7;
-
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+  }
+
+  .picPreview img {
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    -ms-opacity: 0.7;
+    -o-opacity: 0.7;
+    opacity: 0.7;
   }
   
   .picPreview:hover {
