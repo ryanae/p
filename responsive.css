@@ -281,7 +281,7 @@
     color: #ff6b72;
     background: transparent;
     font-size: 16px;
-    background: #fff;
+    background: #333;
     padding: 0px 0px 0px 30px;
     margin-top: -25px;
   }
@@ -292,6 +292,10 @@
     text-decoration: none;
     font-weight: bold;
     background: transparent;
+  }
+
+  .seeMoreButton a:hover {
+    color: #261825;
   }
   
   /* Portfolio - Gallery */
@@ -325,6 +329,7 @@
   .portrait {
     width: 28%;
     float: left;
+    padding: 0px 10px 0px 15px;
   }
   
   .aboutDesc {
