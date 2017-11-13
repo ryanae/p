@@ -36,7 +36,7 @@ a:hover, a:active {
 
 main {
   width: 800px;
-  padding: 10px 10px 100px 10px;
+  padding: 10px 10px 150px 10px;
   margin-left: auto;
   margin-right: auto;
   background: #333;
@@ -360,7 +360,7 @@ NAVIGATION
   width: 320px;
   display: inline-block;
   background: #E56B70;
-  color: #fff;
+  color: #fefefe;
 }
 
 .UXCardDesc h3 {
@@ -448,6 +448,11 @@ NAVIGATION
 
 /* gallery portfolio section */
 /* gallery previews is the main section displayed on portfolio */
+#galleryPage {
+  margin-top: -30px;
+}
+
+
 .galleryPreviews {
   margin-top: 20px;
 }
@@ -520,13 +525,13 @@ NAVIGATION
 
 .portrait {
   margin-top: 0px;
-  padding: 15px;
+  padding: 10px 10px 5px 10px;
 }
 
 .portrait img {
   max-height: 100%;
   max-width: 100%;
-  border: 5px solid #EA3788;
+  border: 5px solid #fff;
 
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -540,7 +545,7 @@ NAVIGATION
 }
 
 .aboutDesc {
-  margin-top: 0px 10px;
+  margin-top: 0px;
   padding: 2px 15px 2px 15px;
 }
 
