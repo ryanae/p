@@ -12,7 +12,7 @@
 
 body {
   margin: 0px;
-  background: #a2e5e4;
+  background: #fefefe;
   color: #fff;
   font-family: 'Karla', helvetica, sans-serif;
   font-size: 14px;
@@ -30,18 +30,21 @@ a, a:visited {
 }
 
 a:hover, a:active {
-  color: #333;
+  color: #F391A0;
 }
 
 main {
   width: 800px;
-  padding: 10px;
+  padding: 10px 10px 100px 10px;
   margin-left: auto;
   margin-right: auto;
+  background: #333;
 }
 
 header {
-  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #261825;
   font-size: 120px;
   font-family: 'Abel', helvetica, sans-serif;
   font-weight: bold;
@@ -52,16 +55,17 @@ header {
 
 section {
   height: auto;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 h1 {
-  padding-left: 20px;
-  background: #74d0d3;
+  margin-top: 50px;
+  width: auto;
   font-family: 'Abel', helvetica, sans-serif;
   font-weight: bold;
-  font-size: 36px;
-  border-left: 12px #ff6b72 solid;
+  font-size: 45px;
+  letter-spacing: 1px;
+  text-align: center;
 
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -71,7 +75,6 @@ h1 {
 }
 
 h1:hover {
-  border-left: 28px #ff6b72 solid;
   cursor: default;
 }
 
@@ -81,8 +84,7 @@ ul {
 
 footer {
   padding: 3px;
-  margin-top: 60px;
-  background: #ff6b72;
+  background: #8E2D5E;
   text-align: center;
   text-transform: uppercase;
   font-size: 11px;
@@ -100,7 +102,7 @@ NAVIGATION
 /* bigger displays use bar */
 .navBar {
   position: fixed;
-  top: -50px;
+  top: -150px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -108,7 +110,7 @@ NAVIGATION
   width: 100%;
   padding: 10px;
   z-index: 1;
-  background: #333;
+  background: #F391A0;
   text-align: center;
 }
 
@@ -116,10 +118,11 @@ NAVIGATION
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: #261825;
 }
 
 .navBar a:hover, .navBar a:active {
-  color: #ff6b72;
+  color: #fff;
 }
 
 
@@ -128,12 +131,12 @@ NAVIGATION
 /* full screen menu background/overlay */
 .display {
   position: fixed;
-  top: -50px;
+  top: -150px;
   left: 0px;
   height: 0%;
   width: 100%;
   z-index: 1;
-  background: #74d0d3;
+  background: #fefefe;
   overflow-y: scroll;
 
   -webkit-transition: 0.5s;
@@ -147,7 +150,7 @@ NAVIGATION
 /* content displayed on the menu */
 .displayLinks {
   position: relative;
-  top: 15%;
+  top: 25%;
   margin-top: 30px;
   width: 100%;
   height: auto;
@@ -161,7 +164,7 @@ NAVIGATION
   font-size: 36px;
   text-decoration: none;
   font-weight: bold;
-  color: #fff;
+  color: #261825;
 }
 
 .displayLinks a:hover, .displayLinks a:active {
@@ -183,7 +186,7 @@ NAVIGATION
   width: 30px;
   height: 3px;
   margin: 6px 0px;
-  background: #333;
+  background: #F391A0;
 }
 
 /* close button */
@@ -194,8 +197,8 @@ NAVIGATION
   padding-bottom: 1px;
   height: 30px;
   width: 30px;
-  background: #fff;
-  color: #ff6b72;
+  background: transparent;
+  color: #EA3788;
   text-decoration: none;
   font-weight: bold;
   font-size: 25px;
@@ -212,19 +215,16 @@ NAVIGATION
 .intro {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8px;
-  margin-bottom: 30px;
-  display: block;
+  margin-bottom: 50px;
   padding: 5px;
-  width: 35%;
+  width: auto;
 
-  background: #ff6b72;
-  color: #a2e5e4;
+  color: #EA3788;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   cursor: default;
 }
 
@@ -266,7 +266,7 @@ NAVIGATION
   text-align: center;
 
   background: #fff;
-  color: #ff6b72;
+  color: #8E2D5E;
 
   -webkit-transition: 0.8s;
   -moz-transition: 0.8s;
@@ -283,7 +283,7 @@ NAVIGATION
   line-height: 20px;  
   text-align: center;
 
-  background: #ff6b72;
+  background: #8E2D5E;
   color: #fff;
 
   -webkit-transition: 0.8s;
@@ -294,7 +294,7 @@ NAVIGATION
 }
 
 .skillCardPink:hover, .skillCardWhite:hover {
-  color: #333;
+  color: #261825;
   cursor: default;
 }
 
@@ -306,15 +306,19 @@ NAVIGATION
 */
 
 #portfolio h2 {
-  color: #ff6b72;
-  font-size: 28px;
+  padding-top: 20px;
+  color: #EA3788;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* UX and gallery sections use same container */
 .UXContent, .galleryContent {
-  margin-top: -10px;
+  margin-top: 30px;
+  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 750px;
@@ -330,9 +334,9 @@ NAVIGATION
 /* each preview UX card contains an img and description article */
 .UXCard {
   padding: 15px 15px 5px 15px;
-  margin: 20px;
+  margin: 40px;
   width: 275px;
-  background: #fff;
+  background: #fefefe;
   color: #333;
 }
 
@@ -354,23 +358,28 @@ NAVIGATION
   padding: 5px 15px 15px 15px;
   width: 320px;
   display: inline-block;
-  background: #ff6b72;
+  background: #E56B70;
   color: #fff;
 }
 
 .UXCardDesc h3 {
-  margin-top: 3px;
-  margin-bottom: -2px;
+  margin: 5px;
   font-family: 'Abel', helvetica, sans-serif;
   font-weight: bold;
   font-size: 28px;
   text-align: center;
+  color: #261825;
 }
 
 /* see more button/link */
 .seeMoreButton, .seeMoreButton a {
   text-align: right;
   font-weight: bold;
+  color: #261825;
+}
+
+.seeMoreButton a:hover {
+  color: #fff;
 }
 
 /* close page button - for UX cards */
@@ -439,19 +448,12 @@ NAVIGATION
 /* gallery portfolio section */
 /* gallery previews is the main section displayed on portfolio */
 .galleryPreviews {
-  margin-top: -10px;
+  margin-top: 40px;
 }
 
-/********** PROBLEM AREA????????? 
-
-conflicting margins?
-
-**********/
 .picPreview {
   padding: 10px 10px 5px 10px;
-  margin: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px;
   width: 300px;
   background: white;
 }
@@ -512,12 +514,11 @@ conflicting margins?
 }
 
 .aboutContent b {
-  color: #ff6b72;
+  color: #E56B70;
 }
 
 .portrait {
   padding: 15px;
-  background: #74d0d3;
 }
 
 .portrait img {
@@ -528,7 +529,6 @@ conflicting margins?
 .aboutDesc {
   margin: 10px;
   padding: 2px 15px 2px 15px;
-  background: #74d0d3;
 }
 
 
@@ -541,12 +541,6 @@ SECTION: Contact
 #contact {
   text-align: center;
   width: auto;
-  color: #333;
-}
-
-#contact h1 {
-  text-align: left;
-  color: #fff;
 }
 
 #contact a {
@@ -554,7 +548,7 @@ SECTION: Contact
   font-weight: bold;
   font-size: 32px;
   text-decoration: none;
-  color: #ff6b72;
+  color: #EA3788;
 
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -564,5 +558,5 @@ SECTION: Contact
 }
 
 #contact a:hover, #contact a:active {
-  color: #333;
+  color: #F391A0;
 }
