@@ -84,7 +84,8 @@ ul {
 }
 
 footer {
-  padding: 3px;
+  padding-top: 2px;
+  padding-bottom: 3px;
   background: #8E2D5E;
   text-align: center;
   text-transform: uppercase;
@@ -452,7 +453,7 @@ NAVIGATION
 /* gallery portfolio section */
 /* gallery previews is the main section displayed on portfolio */
 .gallery {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 
