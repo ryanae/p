@@ -554,8 +554,12 @@ NAVIGATION
 }
 
 .aboutDesc {
-  margin-top: 0px;
-  padding: 2px 15px 2px 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.aboutDesc h2 {
+  display: none;
 }
 
 
