@@ -5,6 +5,7 @@
 
   References: www.w3schools.com
     - Overlay menus (https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp)
+    - Fixed menu (https://www.w3schools.com/howto/howto_css_fixed_menu.asp)
     - General reference for properties, values, etc
 
 */
@@ -88,6 +89,7 @@
   /* about */
   .aboutContent {
     width: auto;
+    margin-top: -40px;
     display: block;
   }
 
@@ -197,7 +199,7 @@
   }
   
   .portrait {
-    width: 40%;
+    width: 50%;
     float: left;
     padding: 0px 10px 0px 10px;
   }
