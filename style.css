@@ -449,7 +449,7 @@ NAVIGATION
 /* gallery portfolio section */
 /* gallery previews is the main section displayed on portfolio */
 .galleryPreviews {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .picPreview {
@@ -529,7 +529,7 @@ NAVIGATION
 }
 
 .aboutDesc {
-  margin: 10px;
+  margin-top: 0px 10px;
   padding: 2px 15px 2px 15px;
 }
 
