@@ -42,19 +42,24 @@
   .display, .pageDisplay {
     overflow: auto;
   }
-  
-  /* change display for skills, portfolio, about */
-  .skillsContent, .UXContent, .galleryPreviews, .aboutContent {
+
+  /* skills */
+  .skillsContent {
     width: auto;
     display: block;
   }
-  
-  /* Portfolio - UX */
+
   .skillCardWhite, .skillCardPink {
     margin: 10px;
     width: auto;
   }
   
+  /* Portfolio - UX */
+  .UXContent {
+    width: auto;
+    display: block;
+  }
+
   .UXCard, .picPreview {
     width: auto;
   }
@@ -64,12 +69,22 @@
   }
   
   /* Portfolio - Gallery */
+  .galleryPreviews {
+    width: auto;
+    display: block;
+  }
+
   .galleryContent img {
     width: 100%;
     height: 50%;
   }
 
   /* about */
+  .aboutContent {
+    width: auto;
+    display: block;
+  }
+
   .portrait {
     margin-left: auto;
     margin-right: auto;
@@ -119,18 +134,23 @@
     margin-bottom: 5px;
   }
   
-  /* skills and UX contents use same container */
-  .skillsContent, .UXContent {
+  /* skills */
+  .skillsContent {
     display: block;
     width: auto;
   }
-  
+
   .skillCardWhite, .skillCardPink {
     width: auto;
     margin: 10px;
   }
   
   /* Portfolio - UX */
+  .UXContent {
+    width: auto;
+    display: block;
+  }
+
   .UXCard {
     width: 320px;
     margin-left: auto;
@@ -217,12 +237,11 @@
     margin-bottom: 5px;
   }
   
-  /* skills, UX, gallery previews */
-  .skillsContent, .UXContent, .galleryPreviews {
+  /* skills */
+  .skillsContent {
     width: auto;
   }
-  
-  /* skills */
+
   .skillCardWhite, .skillCardPink {
     margin: 10px;
     width: 40%;
@@ -343,12 +362,12 @@
   .openButton, #navMenu {
      display: none;
   }
-
-  .skillsContent, .UXContent, .galleryPreviews {
-    width: auto;
-  }
   
   /* skills */
+  .skillsContent {
+    width: auto;
+  }
+
   .skillCardWhite, .skillCardPink {
     margin: 15px;
     width: 25%;
