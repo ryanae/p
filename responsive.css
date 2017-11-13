@@ -1,13 +1,11 @@
 /*
 
+  RESPONSIVE STYLING
   (c) Audrey Ryan - 2017
 
-*/
-
-
-/* 
-
-  Responsive Styling
+  References: www.w3schools.com
+    - Overlay menus (https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp)
+    - General reference for properties, values, etc
 
 */
 
@@ -224,7 +222,7 @@
   
   /* navigation */
   .navBar {
-     display: none;
+    display: none;
   }
   
   .display, .pageDisplay {
@@ -396,11 +394,13 @@
     top: -219px;
     left: -15px;
     padding: 20px 15px;
+
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+
     -webkit-opacity: 0;
     -moz-opacity: 0;
     -ms-opacity: 0;
@@ -437,11 +437,17 @@
   .picPreview {
     width: 28%;
     margin: 10px;
+
     -webkit-opacity: 0.7;
     -moz-opacity: 0.7;
     -ms-opacity: 0.7;
     -o-opacity: 0.7;
     opacity: 0.7;
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
   }
   
