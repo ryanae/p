@@ -485,35 +485,4 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  /* Contact */
-
-  #contact p:hover {
-    -webkit-animation-name: spacedOut;
-    -webkit-animation-duration: 1s;
-    animation-name: spacedOut;
-    animation-duration: 1s;
-  }
-
-  #contact a:hover {
-    color: #ff6b72;
-  }
-
-  /* spacedOut animation frames */
-
-  @-webkit-keyframes spacedOut {
-    0%   {letter-spacing: 0px;}
-    30%  {letter-spacing: 60px;}
-    80%  {letter-spacing: -40px;}
-    95%  {letter-spacing: -26px;}
-    100% {letter-spacing: -32px;}
-  }
-
-  @keyframes spacedOut {
-    0%   {letter-spacing: 0px;}
-    30%  {letter-spacing: 60px;}
-    80%  {letter-spacing: -40px;}
-    95%  {letter-spacing: -26px;}
-    100% {letter-spacing: -32px;}
-  }
 }
