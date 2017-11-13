@@ -34,6 +34,10 @@
   .navBar {
     display: none;
   }
+
+  .anchor {
+    display: none;
+  }
   
   .openButton {
     z-index: 1;
@@ -233,6 +237,10 @@
   
   /* navigation */
   .navBar {
+    display: none;
+  }
+
+  .anchor {
     display: none;
   }
   

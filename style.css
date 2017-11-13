@@ -126,6 +126,15 @@ NAVIGATION
   color: #fff;
 }
 
+/* link to anchor sections on desktops to offset fixed header covering section
+   solution: https://pixelflips.com/blog/anchor-links-with-a-fixed-header (no author listed)
+*/
+
+.anchor {
+  height: 15px;
+  margin: 0px;
+}
+
 
 /* full screen menu toggled by button used for smaller screens */
 
