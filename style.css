@@ -450,7 +450,7 @@ conflicting margins?
 **********/
 .picPreview {
   padding: 10px 10px 5px 10px;
-  margin: 15px;
+  /*margin: 15px;*/
   margin-left: auto;
   margin-right: auto;
   width: 300px;
@@ -483,13 +483,6 @@ conflicting margins?
 }
 
 /* content displayed on gallery page */
-
-/********** PROBLEM AREA????????? 
-
-conflicting margins?
-
-**********/
-
 .galleryContent {
   position: relative;
   top: 15%;
