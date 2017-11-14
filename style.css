@@ -504,11 +504,12 @@ NAVIGATION
 /* page content goes on top of display */
 .picContent {
   position: relative;
-  top: 15%;
+  top: 5%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
   padding-bottom: 30px;
-  width: 80%;
+  width: 90%;
   height: auto;
   text-align: right;
 }
