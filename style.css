@@ -507,7 +507,6 @@ NAVIGATION
   top: 15%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
   padding-bottom: 30px;
   width: 80%;
   height: auto;
@@ -518,6 +517,7 @@ NAVIGATION
   max-height: 100%;
   max-width: 100%;
 }
+
 
 
 
