@@ -508,17 +508,10 @@ NAVIGATION
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   width: 80%;
   height: auto;
-}
-
-.picContent img {
-  border: 5px solid #eee;
-  max-height: 20%;
-  max-width: 20%;
-  float: left;
-  margin: 0px 15px 10px 0px;
+  text-align: right;
 }
 
 .picContent img {
