@@ -95,6 +95,14 @@
           document.getElementById("galleryPage").style.height = "100%";
         }
       }
+
+      function toggleIMG(id) {
+        if (document.getElementById(id).style.height == "100%") {
+          document.getElementById(id).style.height = "0%";
+        } else {
+          document.getElementById(id).style.height = "100%";
+        }
+      }
   
   </script>
   
@@ -417,6 +425,27 @@
 
       <!-- Contains all preview pictures in gallery -->
       <section class="galleryPreviews">
+
+
+
+
+
+
+        <article class="picPreview">
+          <a href="javascript:void(0)" onclick="toggleIMG('fish')"><img src="IMGs/rabbitPreview.jpg"></a>
+        </article>
+        
+        
+<article id="fish" class="fullPic">
+<article class="picContent"><a href="javascript:void(0)" onclick="toggleIMG('fish')">close</a><br><br>
+<img src="IMGs/fish.jpg"></article>
+</article>
+
+
+
+
+
+
 
         <article class="picPreview">
           <a href="javascript:void(0)" onclick="toggleGalleryPage()"><img src="IMGs/rabbitPreview.jpg"></a>
