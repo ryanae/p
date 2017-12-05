@@ -42,6 +42,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     background: #fefefe;
+    margin-bottom: -150px;
 }
 
 header {
@@ -54,7 +55,7 @@ header {
     line-height: 50px;
     padding: 175px 100px 0px 100px;
     width: calc(100vw-200px);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header h1 {
@@ -112,12 +113,16 @@ ul {
 footer {
   padding-top: 2px;
   padding-bottom: 3px;
-  background: #8E2D5E;
+  background: #fefefe;
   text-align: center;
   text-transform: uppercase;
   font-size: 11px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
+}
+
+footer a {
+    color: #000;
 }
 
 
@@ -480,7 +485,7 @@ NAVIGATION
 }
 
 .desc img {
-    border-radius: 100px;
+    border-radius: 50%;
     max-height: 35%;
     max-width: 35%;
 }
@@ -531,11 +536,17 @@ SECTION: Contact
 }
 
 #contact a {
-  font-family: 'Abel', helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 32px;
+  font-family: 'Source Code Pro', courier new;
+  font-size: 16px;
   text-decoration: none;
-  color: #EA3788;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background: #000;
+  color: #fff;
+    display: inline-block;
+    padding: 15px 20px 15px 20px;
+    margin: 5px;
 
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -545,5 +556,6 @@ SECTION: Contact
 }
 
 #contact a:hover, #contact a:active {
-  color: #F391A0;
+  color: #000;
+    background: #fff;
 }
