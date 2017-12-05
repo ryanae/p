@@ -14,7 +14,7 @@
 body {
   margin: 0px;
   background: #fefefe;
-  color: #fff;
+  color: #000;
   font-family: 'Karla', helvetica, sans-serif;
   font-size: 14px;
 }
@@ -35,48 +35,74 @@ a:hover, a:active {
 }
 
 main {
-  width: 800px;
-  padding: 10px 10px 150px 10px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #333;
+    position: relative;
+    top: -150px;
+    width: calc(100vw-200px);
+    padding: 10px 100px 10px 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fefefe;
 }
 
 header {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  color: #261825;
-  font-size: 120px;
-  font-family: 'Abel', helvetica, sans-serif;
-  font-weight: bold;
-  letter-spacing: -2px;
-  text-align: center;
-  cursor: default;
+    background: #fefefe;
+    color: #000;
+    font-family: 'Khula', arial;
+    font-weight: 800;
+    text-align: left;
+    text-transform: lowercase;
+    line-height: 50px;
+    padding: 175px 100px 0px 100px;
+    width: calc(100vw-200px);
+    height: 100vh;
+}
+
+header h1 {
+    letter-spacing: -8px;
+    line-height: 120px;
+    font-size: 140px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+header p {
+    letter-spacing: -2px;
+    font-size: 52px;
+    color: #e7446e;
+}
+
+#continueButton {
+    position: relative;
+    top: -25px;
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+}
+
+#continueButton:hover, #continueButton a:hover{
+    cursor: pointer;
+}
+
+#continueButton img {
+    max-height: 16px;
+    max-width: 64px;
 }
 
 section {
-  height: auto;
-  margin-top: 150px;
+    height: auto;
 }
 
 h1 {
-  margin-top: 50px;
-  width: auto;
-  font-family: 'Abel', helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 45px;
-  letter-spacing: 1px;
-  text-align: center;
-
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-h1:hover {
-  cursor: default;
+    color: #000;
+    font-family: 'Khula', arial;
+    font-weight: 800;
+    letter-spacing: -3px;
+    font-size: 80px;
+    text-align: left;
+    text-transform: lowercase;
 }
 
 ul {
@@ -103,28 +129,33 @@ NAVIGATION
 
 /* bigger displays use bar */
 .navBar {
-  position: fixed;
-  top: -150px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  height: 15px;
-  width: 100%;
-  padding: 10px;
-  z-index: 1;
-  background: #F391A0;
-  text-align: center;
+    position: fixed;
+    top: 0px;
+    display: block;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    background: #fefefe;
+    text-align: center;
 }
 
-.navBar a {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #261825;
+.navBarLinks {
+    float: right;
 }
 
-.navBar a:hover, .navBar a:active {
-  color: #fff;
+.navBarLinks a {
+    font-family: 'Abel';
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    color: #000;
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+}
+
+.navBarLinks a:hover, .navBarLinks a:active {
+  color: #e7446e;
 }
 
 /* link to anchor sections on desktops to offset fixed header covering section
@@ -133,7 +164,8 @@ NAVIGATION
 
 .anchor {
   height: 1px;
-  margin: 0px;
+  margin-top: 0px;
+    margin-bottom: -30px;
 }
 
 
@@ -214,99 +246,6 @@ NAVIGATION
   font-weight: bold;
   font-size: 25px;
   text-align: center;
-}
-
-
-/* 
-
-  Section - intro (blurb)
-
- */
-
-.intro {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding: 5px;
-  width: auto;
-
-  color: #EA3788;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  cursor: default;
-}
-
-
-/* 
-
-  SECTION - skills 
-
-*/
-
-/* container for all content in this section */
-.skillsContent {
-  margin-top: -10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 750px;
-  display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* note: skill cards identical except for color scheme (white/pink) */
-.skillCardWhite h2, .skillCardPink h2 {
-  margin-top: 20px;
-  font-size: 30px;
-  line-height: 38px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.skillCardWhite {
-  margin: 5px;
-  padding: 15px;
-  width: 275px;
-  font-size: 14px;
-  line-height: 20px;  
-  text-align: center;
-
-  background: #fff;
-  color: #8E2D5E;
-
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -ms-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.skillCardPink {
-  margin: 5px;
-  padding: 15px;
-  width: 275px;
-  font-size: 14px;
-  line-height: 20px;  
-  text-align: center;
-
-  background: #8E2D5E;
-  color: #fff;
-
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -ms-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.skillCardPink:hover, .skillCardWhite:hover {
-  color: #261825;
-  cursor: default;
 }
 
 
@@ -515,39 +454,70 @@ NAVIGATION
 
 */
 
-.aboutContent {
-  width: 750px;
+#about {
+    height: auto;
 }
 
-.aboutContent b {
-  color: #E56B70;
+#aboutContent {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.portrait {
-  margin: 20px 20px 10px 0px;
+.desc {
+    font-size: 16px;
+    margin-top: -75px;
+    width: 40%;
+    border-right: 2px solid #000;
+    padding: 45px 45px 45px 0px;
 }
 
-.portrait img {
-  max-height: 100%;
-  max-width: 100%;
-  border: 5px solid #fff;
-
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;  
+.desc b {
+    color: #e7446e;
 }
 
-.portrait img:hover {
-  border: 5px solid #F391A0;
+.desc img {
+    border-radius: 100px;
+    max-height: 35%;
+    max-width: 35%;
 }
 
-.aboutDesc {
-  margin-top: -10px;
-  padding: 10px;
+.skills {
+    margin-top: -105px;
+    width: 40%;
+    padding: 45px;
+    text-align: center;
 }
 
+.skills h1 {
+    text-align: center;
+    font-family: 'Abel';
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.skills ul {
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Source Code Pro', courier new;
+    letter-spacing: 1px;
+    margin: 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.skills ul:hover {
+    background: #000;
+    color: #fff;
+}
 
 /* 
 
