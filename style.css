@@ -488,7 +488,7 @@ NAVIGATION
 .skills {
     margin-top: -105px;
     width: 40%;
-    padding: 45px;
+    padding: 45px 0px 45px 45px;
     text-align: center;
 }
 
