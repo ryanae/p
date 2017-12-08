@@ -13,6 +13,7 @@
 
 body {
   margin: 0px;
+    height: 100%;
   background: #fefefe;
   color: #000;
   font-family: 'Karla', helvetica, sans-serif;
@@ -20,7 +21,7 @@ body {
 }
 
 a, a:visited {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 
   -webkit-transition: 0.5s;
@@ -38,7 +39,7 @@ main {
     position: relative;
     top: -150px;
     width: calc(100vw-200px);
-    padding: 10px 100px 10px 100px;
+    padding: 10px 100px 0px 100px;
     margin-left: auto;
     margin-right: auto;
     background: #fefefe;
@@ -73,14 +74,15 @@ header p {
 }
 
 #continueButton {
-    position: absolute;
+    position: abosolute;
     bottom: 0px;
     display: block;
-    width: 90%;
-    float: left;
+    width: 100%;
     margin: 10px;
     padding: 0px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #continueButton:hover, #continueButton a:hover{
@@ -106,19 +108,38 @@ h1 {
     text-transform: lowercase;
 }
 
+h2 {
+    font-family: 'Source Code Pro', courier new;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #e7446e;
+    font-family: 'Khula', arial;
+    font-weight: 800;
+    letter-spacing: -2px;
+    font-size: 42px;
+    text-align: left;
+    text-transform: lowercase;
+}
+}
+
 ul {
   list-style-position: inside;
 }
 
 footer {
-  padding-top: 2px;
-  padding-bottom: 3px;
-  background: #fefefe;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 11px;
-  color: #000;
-  font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    background: #fefefe;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #000;
+    font-weight: bold;
 }
 
 footer a {
@@ -168,9 +189,8 @@ NAVIGATION
 */
 
 .anchor {
-  height: 1px;
-  margin-top: 0px;
-    margin-bottom: -30px;
+  height: 50px;
+  margin-bottom: -30px;
 }
 
 
@@ -254,204 +274,6 @@ NAVIGATION
 }
 
 
-/* 
-
-  SECTION - portfolio 
-
-*/
-
-#portfolio h2 {
-  padding-top: 20px;
-  color: #EA3788;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/* UX and gallery sections use same container */
-.UXContent, .galleryContent {
-  margin-top: 30px;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 750px;
-
-  display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* UX portfolio section */
-
-/* each preview UX card contains an img and description article */
-.UXCard {
-  padding: 15px 15px 5px 15px;
-  margin: 40px;
-  width: 275px;
-  background: #fefefe;
-  color: #333;
-}
-
-.UXCard img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.UXCardDesc {
-  position: relative;
-  bottom: -10px;
-  left: -15px;
-  padding: 5px 15px 15px 15px;
-  width: 320px;
-  display: inline-block;
-  background: #E56B70;
-  color: #fefefe;
-}
-
-.UXCardDesc h3 {
-  margin: 5px;
-  font-family: 'Abel', helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 28px;
-  text-align: center;
-  color: #261825;
-}
-
-/* see more button/link */
-.seeMoreButton, .seeMoreButton a {
-  text-align: right;
-  font-weight: bold;
-  color: #261825;
-}
-
-.seeMoreButton a:hover {
-  color: #fff;
-}
-
-/* close page button - for UX cards */
-.closePage {
-  padding: 8px;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  color: #ff6b72;
-  background: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-/* see full documentation button/link */
-.seeFullDocButton, .seeFullDocButton a {
-  margin: 10px;
-  font-weight: bold;
-  color: #ff6b72;
-}
-
-/* MR, ASH, LK pages - "see more" links lead to these pages */
-/* page background / display */
-.pageDisplay {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 0%;
-  width: 100%;
-  z-index: 1;
-  background: #fff;
-  color: #333;
-  overflow-y: scroll;
-
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-/* page content goes on top of display */
-.pageContent {
-  position: relative;
-  top: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  padding-bottom: 10px;
-  width: 80%;
-  height: auto;
-}
-
-.pageContent img {
-  border: 5px solid #eee;
-  max-height: 20%;
-  max-width: 20%;
-  float: left;
-  margin: 0px 15px 10px 0px;
-}
-
-/* gallery portfolio section */
-/* gallery previews is the main section displayed on portfolio */
-.gallery {
-  margin-top: 50px;
-}
-
-.galleryPreviews {
-  margin-top: 20px;
-}
-
-.picPreview {
-  padding: 10px 10px 5px 10px;
-  margin: 20px;
-  width: 300px;
-  background: white;
-}
-
-.picPreview img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.picDisplay {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 0%;
-  width: 100%;
-  z-index: 1;
-  background: #fff;
-  color: #333;
-  overflow-y: scroll;
-
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-/* page content goes on top of display */
-.picContent {
-  position: relative;
-  top: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  padding-bottom: 30px;
-  width: 75%;
-  height: auto;
-  text-align: right;
-}
-
-.picContent img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
 
 /* 
 
@@ -461,6 +283,10 @@ NAVIGATION
 
 #about {
     height: auto;
+}
+
+#aboutAnchor {
+    height: 1px;
 }
 
 #aboutContent {
@@ -486,15 +312,16 @@ NAVIGATION
 
 .desc img {
     border-radius: 50%;
-    max-height: 35%;
-    max-width: 35%;
+    max-height: 40%;
+    max-width: 40%;
 }
 
 .skills {
-    margin-top: -105px;
+    margin-top: -100px;
     width: 40%;
     padding: 45px 0px 45px 45px;
     text-align: center;
+    cursor: default;
 }
 
 .skills h1 {
@@ -524,6 +351,134 @@ NAVIGATION
     color: #fff;
 }
 
+
+
+
+
+/*
+
+    SECTION - PORTFOLIO
+
+*/
+
+#portfolio h1 {
+    margin-bottom: 0px;
+}
+
+.projectPreview {
+    margin-top: 0px;
+    width: auto;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 40px;
+    transition: 0.6s;
+    border-bottom: 2px solid #000;
+    text-align: right;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.projectPreview h3 {
+    font-size: 56px;
+    text-align: center;
+    line-height: 58px;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.projectPreview img {
+    display: inline;
+    float: right;
+    padding-left: 30px;
+    max-width: 50%;
+}
+
+.projectPreview a {
+    display: inline-block;
+    color: #fff;
+    background: #e7446e;
+    padding: 10px 10px 5px 10px;
+    width: 12%;
+    height: 10%;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Khula';
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.projectPreview a:hover {
+    background: #EF5E83;
+}
+
+
+/* project skills */
+
+.projectSkills {
+    width: 50%;
+    text-align: left;
+    cursor: default;
+}
+
+.projectSkills ul {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    font-family: 'Source Code Pro', courier new;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.projectSkills ul:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* project pages */
+
+.projectPage {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 0%;
+  width: 100%;
+  z-index: 1;
+  background: #fff;
+  color: #333;
+  overflow-y: auto;
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* page content goes on top of display */
+.projectPageContent {
+  position: relative;
+  top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  width: 80%;
+  height: auto;
+}
+
+.stopScrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 /* 
 
 SECTION: Contact 
@@ -531,8 +486,8 @@ SECTION: Contact
 */
 
 #contact {
-  text-align: center;
-  width: auto;
+    text-align: center;
+    width: auto;
 }
 
 #contact a {

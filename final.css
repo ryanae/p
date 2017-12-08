@@ -1,0 +1,63 @@
+h2 {
+    font-family: 'Source Code Pro', courier new;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+main {
+    position: relative;
+    top: 100px;
+}
+
+
+/* User Research */
+#userResearch {
+    width: auto;
+}
+
+/* Document Previews */
+.documentPreview {
+    margin-top: -50px;
+    margin-bottom: 100px;
+    width: 100%;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background: #fefefe;
+    transition: 0.6s;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.documentPreview:hover {
+    background: #000;
+    color: #fff;
+}
+
+.documentPreview img {
+    float: left;
+    padding-right: 30px;
+    max-width: 30vw;
+    max-height: 20vw;
+}
+
+.documentPreview a {
+    padding: 10px;
+    width: 25%;
+    height: 20px;
+    display: inline-block;
+    float: right;
+    background: transparent;
+    color: #e7446e;
+    font-family: 'Source Code Pro', courier new;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+}
+
+.documentPreview a:hover {
+    color: #fff;
+}

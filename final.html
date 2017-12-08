@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <meta name="author" content="Audrey Ryan">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STYLESHEETS USED -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="final.css">
+  
+  <!-- Google Font APIs -->
+  <link href="https://fonts.googleapis.com/css?family=Abel|Karla:400,400i,700,700i|Khula:300,400,600,700,800|Source+Code+Pro:300,400" rel="stylesheet">
+
+  <!-- JS -->
+
+  <!-- Smooth Scroll Script (c) https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});  
+  
+    function toggleDisplay() {
+        if (document.getElementById("navMenu").style.height == "100%") {
+          document.getElementById("navMenu").style.height = "0%";
+        } else {
+          document.getElementById("navMenu").style.height = "100%";
+       }
+    }
+
+      function toggleIMG(id) {
+        if (document.getElementById(id).style.height == "100%") {
+          document.getElementById(id).style.height = "0%";
+        } else {
+          document.getElementById(id).style.height = "100%";
+        }
+      }
+  
+  </script>
+  
+  <title>Audrey Ryan</title>
+
+</head>
+
+    
+<body>
+    
+  <!-- NAVIGATION -->
+  <nav>
+  
+  <!-- desktop navigation bar -->
+    <section class="navBar">
+        <article class="navBarLinks">
+            <a href="index.html">return</a>
+            <a href="#UR">User Research</a>
+            <a href="#UT">User Testing</a>
+            <a href="#S">Summary</a>
+            <a href="#INC">Incorporation</a>
+        </article>
+
+    </section>
+    
+    <!-- responsive menu: button opens/closes full screen menu -->
+
+    <!-- open button -->
+    <article class="openButton" onclick="toggleDisplay()">
+        <article class="bar1"></article>
+        <article class="bar2"></article>
+        <article class="bar3"></article>
+    </article>
+    
+    <!-- full-screen menu-->
+    <section id="navMenu" class="display">
+
+      <!-- close button -->
+      <a href="javascript:void(0)" onclick="toggleDisplay()" class="closeButton">&times;</a>
+       
+        <!-- menu links -->
+      <article class="displayLinks">
+        <a href="index.html" onclick="toggleDisplay()">Home</a>
+          <a href="#skills" onclick="toggleDisplay()">What I Offer</a>
+          <a href="#portfolio" onclick="toggleDisplay()">Porfolio</a>
+          <a href="#about" onclick="toggleDisplay()">About</a>
+          <a href="#contact" onclick="toggleDisplay()">Contact</a>
+        </article>
+       
+    </section>
+    
+  </nav>
+ 
+    
+<main>
+    <!-- SECTION: USER RESEARCH -->
+    
+    <section id="UR" class="anchor"></section>
+    
+    <section id="userResearch">
+        
+        <h1>User Research</h1>
+        
+        <article class="documentPreview">
+            <img src="IMGs/userInterviews.png">
+            
+            <h2>User Interviews</h2>
+            
+            <p>User interviews were conducted to gather insight about what type of content and elements most effectively demonstrate skill and experience. Interviewees were asked about their current academic and/or professional careers, and about the process of gaining experience from past successes, obstacles, and failures. <br></p>
+            
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1usiMWwThrzr-ls7-dEtMedIZwM9PdWo6yDBuiP1rp04/edit?usp=sharing">See Full Documentation</a>
+        </article>
+        
+        <article class="documentPreview">
+            <img src="IMGs/featureValueMatrix.png">
+            
+            <h2>Feature Value Matrix</h2>
+            
+            <p>User inreviews were condugjdfglkjdllsdfll jlfdjgsfkgjl lkvbjldfkgj lkfgjlkfjlksfdglkvblksdjglk  fklgjlfgj lkjlbkj lkjg.<br></p>
+            
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1i4Gf9HKs0Pw6FoNPZ6gx__m8IrE7tcghODcfn6DXAkg/edit?usp=sharing">See Full Documentation</a>
+        </article>
+        
+        <article class="documentPreview">
+            <img src="IMGs/featurePrioritization.png">
+            
+            <h2>Feature Prioritization</h2>
+            
+            <p>User inreviews were condugjdfglkjdllsdfll jlfdjgsfkgjl lkvbjldfkgj lkfgjlkfjlksfdglkvblksdjglk  fklgjlfgj lkjlbkj lkjg.<br></p>
+            
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1i4Gf9HKs0Pw6FoNPZ6gx__m8IrE7tcghODcfn6DXAkg/edit?usp=sharing">See Full Documentation</a>
+        </article>
+        
+        <article class="documentPreview">
+            <img src="IMGs/competitorAnalysis.png">
+            
+            <h2>Competitor Analysis</h2>
+            
+            <p>User inreviews were condugjdfglkjdllsdfll jlfdjgsfkgjl lkvbjldfkgj lkfgjlkfjlksfdglkvblksdjglk  fklgjlfgj lkjlbkj lkjg.<br></p>
+            
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1i4Gf9HKs0Pw6FoNPZ6gx__m8IrE7tcghODcfn6DXAkg/edit?usp=sharing">See Full Documentation</a>
+        </article>
+    </section>
+    
+    <!-- User Testing -->
+    <section id="UT" class="anchor"></section>
+    <section id="userTesting">
+        <h1>User Testing</h1>
+        
+        <article class="documentPreview">
+            <img src="IMGs/userStories.png">
+            
+            <h2>User Stories</h2>
+            
+            <p>User inreviews were condugjdfglkjdllsdfll jlfdjgsfkgjl lkvbjldfkgj lkfgjlkfjlksfdglkvblksdjglk  fklgjlfgj lkjlbkj lkjg.<br></p>
+            
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1i4Gf9HKs0Pw6FoNPZ6gx__m8IrE7tcghODcfn6DXAkg/edit?usp=sharing">See Full Documentation</a>
+        </article>
+        
+        <article class="documentPreview">
+            <img src="IMGs/cognitiveWalkthrough.png">
+            
+            <h2>Cognitive Walkthrough</h2>
+            
+            <p>User inreviews were condugjdfglkjdllsdfll jlfdjgsfkgjl lkvbjldfkgj lkfgjlkfjlksfdglkvblksdjglk  fklgjlfgj lkjlbkj lkjg.<br></p>
+            
+            <a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1i4Gf9HKs0Pw6FoNPZ6gx__m8IrE7tcghODcfn6DXAkg/edit?usp=sharing">See Full Documentation</a>
+        </article>
+    </section>
+    
+    <section id="summary">x</section>
+    
+    <section id="incorporation">x</section>
+    
+</main>
+    
+</body>
+    
+</html>

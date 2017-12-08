@@ -11,6 +11,9 @@
     - Smooth scroll (https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll)
     - General reference for properties, values, etc
 
+    Disable body scrolling when overlay open - 
+    (https://stackoverflow.com/questions/4770025/how-to-disable-scrolling-temporarily)
+
 -->
 <head>
 
@@ -23,7 +26,7 @@
   <link rel="stylesheet" type="text/css" href="responsive.css">
   
   <!-- Google Font APIs -->
-  <link href="https://fonts.googleapis.com/css?family=Abel|Karla:400,400i,700,700i|Khula:300,400,600,700,800|Source+Code+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Karla:400,400i,700,700i|Khula:300,400,600,700,800|Source+Code+Pro:300,400" rel="stylesheet">
 
   <!-- JS -->
 
@@ -55,53 +58,19 @@
     } // End if
   });
 });  
-  
-    function toggleDisplay() {
-        if (document.getElementById("navMenu").style.height == "100%") {
-          document.getElementById("navMenu").style.height = "0%";
-        } else {
-          document.getElementById("navMenu").style.height = "100%";
-       }
-    }
 
-    function toggleMRpage() {
-        if (document.getElementById("MRpage").style.height == "100%") {
-          document.getElementById("MRpage").style.height = "0%";
-        } else {
-          document.getElementById("MRpage").style.height = "100%";
-        }
-    }
-
-      function toggleASHpage() {
-        if (document.getElementById("ASHpage").style.height == "100%") {
-          document.getElementById("ASHpage").style.height = "0%";
-        } else {
-          document.getElementById("ASHpage").style.height = "100%";
-        }
-      }
-
-      function toggleLKpage() {
-        if (document.getElementById("LKpage").style.height == "100%") {
-          document.getElementById("LKpage").style.height = "0%";
-        } else {
-          document.getElementById("LKpage").style.height = "100%";
-        }
-      }
-
-      function toggleGalleryPage() {
-        if (document.getElementById("galleryPage").style.height == "100%") {
-          document.getElementById("galleryPage").style.height = "0%";
-        } else {
-          document.getElementById("galleryPage").style.height = "100%";
-        }
-      }
-
-      function toggleIMG(id) {
+      
+      
+    /* toggle function */
+      
+      function togglePage(id) {
         if (document.getElementById(id).style.height == "100%") {
           document.getElementById(id).style.height = "0%";
+            $('body').removeClass('stopScrolling');
         } else {
           document.getElementById(id).style.height = "100%";
-        }
+            $('body').addClass('stopScrolling');
+        }      
       }
   
   </script>
@@ -117,7 +86,7 @@
         <h1>Hi, I'm<br>Audrey Ryan.</h1>
         <p>I'm an aspiring UX designer.</p><br>
         <a href="#aboutAnchor"><article id="continueButton">
-        <img src="IMGs/256arrow.png">
+        <img src="IMGs/arrowDown.png">
             </article></a>
     </header>
 
@@ -130,7 +99,8 @@
             <a href="index.html">home</a>
             <a href="#aboutAnchor">about</a>
             <a href="#portfolioAnchor">portfolio</a>
-            <a href="#contactAnchor">contact</a>       
+            <a href="#contactAnchor">contact</a>
+            <a href="final.html">final</a>
         </article>
 
     </section>
@@ -176,7 +146,7 @@
             
         <article class="desc">
             
-            <center><img src="IMGs/portrait.jpg"></center><br>
+            <center><img src="IMGs/selfPic.jpg"></center><br>
             
             <b>My name is Audrey!</b> I’m currently a senior at University of California, Irvine. I’m studying Informatics, specializing in Human-Computer Interaction.<br><br>
 
@@ -187,9 +157,12 @@
         
         <article class="skills">
                 <h1>skills&nbsp;&nbsp;/&nbsp;&nbsp;tools</h1>
+                <ul>UX design</ul>
+                <ul>UI design</ul>
                 <ul>user research</ul>
                 <ul>user testing</ul>
                 <ul>interaction design</ul>
+                <ul>application design</ul>
                 <ul>adobe photoshop</ul>
                 <ul>adobe illustrator</ul>
                 <ul>html</ul>
@@ -212,77 +185,30 @@
     <section id="portfolio">
     <h1>Portfolio</h1>
     
-    <!-- Software & UX section -->  
-    <h2>Software &amp; UX Design</h2>
-
-    <section class="UXContent">
-
-      <!-- Preview Cards -->
-
-        <!-- Messenger Redux Preview Card -->
-        <article class="UXCard">
-              <img src="IMGs/messengerredux.png" alt="Messenger Redux"><br>
-          
-                <article class="UXCardDesc">
-                  <h3>Messenger Redux</h3>
+        <!-- MESSENGER REDUX PREVIEW -->
+        <article class="projectPreview">
             
-                   <p>
-                    A redesign of Facebook's mobile messenger app that reaccentuates the purpose of the app: messaging.
-                  </p>
+             <img src="IMGs/messengerPreview.png" alt="Messenger Redux">
             
-                    <article class="seeMoreButton">
-                      <a href="javascript:void(0)" onclick="toggleMRpage()">See more</a>
-                  </article>
-     
-                </article>
+            <article class="projectSkills">
+                <ul>user research</ul> <ul>user testing</ul> <ul>interaction design</ul>
+            </article>
+            
+            <h3>Messenger Redux</h3>
+            
+                    A redesign of Facebook's mobile messenger app aimed at improving navigation, reducing clutter, and streamlining features.<br><br>
+
+            <a href="javascript:void(0)" onclick="togglePage('MRpage')">Read More</a>
+
         </article>
-
-        <!-- ASH Preview Card -->
-        <article class="UXCard">
-              <img src="IMGs/ASH.png" alt="ASH"><br>
-          
-              <article class="UXCardDesc">
-                  <h3>Anteaters Stop Hunger</h3>
-            
-                   <p>
-                    A software system built to connect University of California, Irvine and local food shelters to reduce food waste and stop hunger.
-                  </p>
-            
-                    <article class="seeMoreButton">
-                      <a href="javascript:void(0)" onclick="toggleASHpage()">See more</a>
-                  </article>
-     
-                </article>
-        </article>
-
-        <!-- Lyft Kids Preview Card -->
-        <article class="UXCard">
-              <img src="IMGs/lyftkids.png" alt="Lyft Kids"><br>
-          
-                <article class="UXCardDesc">
-                  <h3>Lyft Kids</h3>
-            
-                   <p>
-                    A mobile app design for a shuttle service made for busy parents and their children.
-                  </p>
-            
-                    <article class="seeMoreButton">
-                      <a href="javascript:void(0)" onclick="toggleLKpage()">See more</a>
-                  </article>
-     
-                </article>
-        </article>
-
-
-        <!-- Pages that preview card links lead to -->
-
+        
         <!-- MESSENGER REDUX PAGE -->
-        <article id="MRpage" class="pageDisplay">
+        <article id="MRpage" class="projectPage">
 
           <!-- Close button -->
-          <a href="javascript:void(0)" onclick="toggleMRpage()" class="closePage">Close</a>
+          <a href="javascript:void(0)" onclick="togglePage('MRpage')" class="projectPageContent">Close</a>
 
-          <article class="pageContent">
+          <article class="projectPageContent">
               <h2>Messenger Redux</h2>
               
               <img src="IMGs/messengerredux.png">
@@ -316,202 +242,43 @@
 
           </article>
         </article>
-
-
-        <!-- ASH page -->
-        <article id="ASHpage" class="pageDisplay">
-
-          <!-- Close button -->
-          <a href="javascript:void(0)" onclick="toggleASHpage()" class="closePage">Close</a>
-
-          <article class="pageContent">
-              <h2>Anteaters Stop Hunger</h2>
-              
-              <img src="IMGs/ASH.png">
-              <p>
-              Anteaters Stop Hunger was a software project born from the desire to help reduce hunger and food waste in the area around University of California, Irvine. Specifically, the application aimed to connect UCI's eateries to local food shelters, and facilitate communication and deliveries between the two parties. 
-              </p>
-              <br>
-
-              <h3>Goals</h3>
-              <ul>
-                <li>Create three different front-ends for the three users of the system: UCI staff, food shelter staff, drivers</li>
-                <li>Facilitate communication; allow UCI staff to post available food, allow food shelter staff to make requests, schedule deliveries</li>
-                <li>Provide users with live, accurate GPS tracking of deliveries</li>
-                <li>Ensure exchange and transportation of food to adheres food safety standards and regulations</li>
-                <li>Log history of reciepts, donations and other necessary documentation for tax purposes</li>
-              </ul>
-
-              <h3>Role &amp; Duties</h3>
-              <ul>
-                <li>Gather requirements</li>
-                <li>Author documentation</li>
-                <li>Write case scenarios, use cases</li>
-                <li>UML, class diagrams</li>
-                <li>Stakeholder, goal models</li>
-              </ul>
-              
-              <br>
-              <a href="/PDFs/ASH.pdf" target="_blank" class="seeFullDocButton">See full documentation (PDF)</a>
-              <br>
-              <br>
-
-          </article>
-        </article>
-
-
-        <!-- Lyft Kids page -->
-        <article id="LKpage" class="pageDisplay">
-
-          <!-- Close button -->
-          <a href="javascript:void(0)" onclick="toggleLKpage()" class="closePage">Close</a>
-
-          <article class="pageContent">
-              <h2>Lyft Kids</h2>
-              
-              <img src="IMGs/lyftkids.png">
-              <p>
-              Lyft Kids is a proposal for a company that shuttles kids around on behalf of their parents. My part of the project focused on determining functionality and generating design proposals, in respects to the client-side of the mobile application.
-              </p>
-              <br>
-
-              <h3>Goals</h3>
-              <ul>
-                <li>Determine project requirements, goals, contstraints, assumptions/li>
-                <li>Design two different interfaces, one for parents and one for children</li>
-                <li>Create low fidelity mock-ups</li>
-              </ul>
-
-              <h3>Role &amp; Duties</h3>
-              <ul>
-                <li>Gather requirements</li>
-                <li>Design low fidelity mock-ups of </li>
-                <li>User Interviews</li>
-              </ul>
-              
-              <br>
-              <a href="/PDFs/LK.pdf" target="_blank" class="seeFullDocButton">See full documentation (PDF)</a>
-              <br>
-              <br>
-
-          </article>
-        </article>
-
-      </section>
-
-
-      <!-- Gallery -->
-      <section class="gallery">
-
-      <h2>Art &amp; Photography</h2>
-
-      <!-- Contains all preview & full pictures in gallery -->
-      <section class="galleryPreviews">
-
-        <!-- wolves -->
-        <article class="picPreview">
-          <a href="javascript:void(0)" onclick="toggleIMG('wolves')">
-
-            <img src="IMGs/wolvesPreview.jpg">
-
-          </a>
-        </article>
-
-        <article id="wolves" class="picDisplay">
-          <a href="javascript:void(0)" onclick="toggleIMG('wolves')" class="closePage">close</a>
-
-          <article class="picContent">
-
-            <img src="IMGs/wolves.jpg">
-
-          </article>
-        </article>
-
         
-        <!-- stag -->
-        <article class="picPreview">
-          <a href="javascript:void(0)" onclick="toggleIMG('stag')">
+        
+        <!-- DOLLHOUSE PREVIEW -->
+        <article class="projectPreview">
+            
+             <img src="IMGs/dollhousePreview.png" alt="Collaborative Dollhouse">
+            
+            <article class="projectSkills">
+                <ul>application design</ul> <ul>interaction design</ul> <ul>UI design</ul>
+            </article>
+            
+            <h3>Collaborative Dollhouse</h3>
+            
+                    A prototype for an online, collaborative dollhouse-inspired desktop game developed over three weeks.<br><br>
 
-            <img src="IMGs/stagPreview.jpg">
+            <a href="javascript:void(0)" onclick="toggleMRpage()">Read More</a>
 
-          </a>
-        </article>
-
-        <article id="stag" class="picDisplay">
-          <a href="javascript:void(0)" onclick="toggleIMG('stag')" class="closePage">close</a>
-
-          <article class="picContent">
-
-            <img src="IMGs/stag.JPG">
-
-          </article>
-        </article>
-
-
-        <!-- medusa -->
-        <article class="picPreview">
-          <a href="javascript:void(0)" onclick="toggleIMG('medusa')">
-
-            <img src="IMGs/medusaPreview.jpg">
-
-          </a>
-        </article>
-
-        <article id="medusa" class="picDisplay">
-          <a href="javascript:void(0)" onclick="toggleIMG('medusa')" class="closePage">close</a>
-
-          <article class="picContent">
-
-            <img src="IMGs/medusa.jpg">
-
-          </article>
-        </article>
-
-        <!-- kaneda -->
-        <article class="picPreview">
-          <a href="javascript:void(0)" onclick="toggleIMG('kaneda')">
-
-            <img src="IMGs/kanedaPreview.jpg">
-
-          </a>
-        </article>
-
-        <article id="kaneda" class="picDisplay">
-          <a href="javascript:void(0)" onclick="toggleIMG('kaneda')" class="closePage">close</a>
-
-          <article class="picContent">
-
-            <img src="IMGs/kaneda.JPG">
-
-          </article>
-        </article>
-
-
-        <!-- otgw -->
-        <article class="picPreview">
-          <a href="javascript:void(0)" onclick="toggleIMG('otgw')">
-
-            <img src="IMGs/otgwPreview.jpg">
-
-          </a>
-        </article>
-
-        <article id="otgw" class="picDisplay">
-          <a href="javascript:void(0)" onclick="toggleIMG('otgw')" class="closePage">close</a>
-
-          <article class="picContent">
-
-            <img src="IMGs/otgw.jpg">
-
-          </article>
         </article>
         
-      </section>
+        <!-- PORTFOLIO PREVIEW -->
+        <article class="projectPreview">
+            
+             <img src="IMGs/dollhousePreview.png" alt="Collaborative Dollhouse">
+            
+            <article class="projectSkills">
+                <ul>User Research</ul> <ul>user testing</ul> <ul>UX design</ul> 
+            </article>
+            
+            <h3>this portfolio</h3>
+            
+                    This portfolio was created from scratch, by me! It is currently in the process of being redesigned.<br><br>
 
-    </section>
+            <a href="final.html">Read More</a>
 
+        </article>
+ 
     </section>
-    
     
     <!-- SECTION: contact -->
     <section id="contactAnchor" class="anchor"></section>
@@ -528,7 +295,12 @@
       </p>
 
     </section>
-
+    
+      <br><br><br>
+      
+<a href="#aboutAnchor"><article id="continueButton">
+        <img src="IMGs/arrowUp.png">
+            </article></a>
   </main>
 
   <!-- footer -->
