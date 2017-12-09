@@ -118,11 +118,13 @@ header p {
     
     /* button */
     
+    /*
     #continueButton {
         min-width: 85%;
         position: relative;
         left: 0px;
     }
+    */
   
 }
 
@@ -235,9 +237,11 @@ header p {
     
     /* button */
     
+    /*
     #continueButton {
         min-width: 85%;
     }
+    */
   
     /* final - documentPreview */
     .documentPreview img {
@@ -349,9 +353,11 @@ header p {
     
     /* button */
     
+    /*
     #continueButton {
         min-width: 50%;
     }
+    */
 
 }
 
