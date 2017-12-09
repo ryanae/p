@@ -1,3 +1,7 @@
+a, a:hover, a:active, a:visited {
+    color: #000;
+}
+
 h2 {
     font-family: 'Source Code Pro', courier new;
     font-size: 32px;
@@ -8,9 +12,27 @@ h2 {
 
 main {
     position: relative;
-    top: 100px;
+    top: 0px;
 }
 
+footer {
+    width: auto;
+    position: relative;
+    bottom: -100px;
+    left: 0px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    background: #fefefe;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #000;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #e7446e;
+}
 
 /* User Research */
 #userResearch {
@@ -21,7 +43,7 @@ main {
 .documentPreview {
     margin-top: -50px;
     margin-bottom: 100px;
-    width: 100%;
+    width: auto;
     overflow-y: auto;
     margin-left: auto;
     margin-right: auto;
@@ -45,19 +67,64 @@ main {
 }
 
 .documentPreview a {
-    padding: 10px;
-    width: 25%;
-    height: 20px;
-    display: inline-block;
-    float: right;
     background: transparent;
     color: #e7446e;
     font-family: 'Source Code Pro', courier new;
     text-transform: uppercase;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .documentPreview a:hover {
     color: #fff;
+}
+
+/* Summary and Incoroporation */
+#reflection {
+    height: auto;
+    padding-bottom: 25px;
+}
+
+#reflectionContent {
+    margin-top: -100px;
+    width: auto;
+    display: block;
+    text-align: justify;
+}
+
+.essay {
+    width: auto;
+    padding: 30px 60px;
+}
+
+.essay p {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.break {
+    width: 40%;
+    border-bottom: 2px solid black;
+    margin: auto;
+    height: 1px;
+}
+
+/* scroll button */
+
+#scrollButton {
+    display: block;
+    max-height: 64px;
+    min-width: 80%;
+    margin-bottom: 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+#scrollButton:hover, #scrollButton a:hover{
+    cursor: pointer;
+}
+
+#scrollButton img {
+    max-height: 16px;
+    max-width: 64px;
 }

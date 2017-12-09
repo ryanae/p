@@ -355,9 +355,11 @@
 
 @media all and (min-width: 1201px) {  
   
-  body {
+  body a {
+      color: #000;
   }
   
+
   main {
 /*    width: 100%; */
     padding-bottom: 50px;
