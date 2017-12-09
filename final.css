@@ -8,6 +8,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 300;
+    line-height: 30px;
 }
 
 main {
@@ -128,3 +129,4 @@ footer a:hover {
     max-height: 16px;
     max-width: 64px;
 }
+

@@ -108,25 +108,25 @@
     <!-- responsive menu: button opens/closes full screen menu -->
 
     <!-- open button -->
-    <article class="openButton" onclick="toggleDisplay()">
+    <article class="openButton" onclick="togglePage('navMenu')">
         <article class="bar1"></article>
         <article class="bar2"></article>
         <article class="bar3"></article>
     </article>
     
     <!-- full-screen menu-->
-    <section id="navMenu" class="display">
+    <section id="navMenu" class="mobileNav">
 
       <!-- close button -->
-      <a href="javascript:void(0)" onclick="toggleDisplay()" class="closeButton">&times;</a>
+      <a href="javascript:void(0)" onclick="togglePage('navMenu')" class="closeButton">&times;</a>
        
         <!-- menu links -->
-      <article class="displayLinks">
-        <a href="index.html" onclick="toggleDisplay()">Home</a>
-          <a href="#skills" onclick="toggleDisplay()">What I Offer</a>
-          <a href="#portfolio" onclick="toggleDisplay()">Porfolio</a>
-          <a href="#about" onclick="toggleDisplay()">About</a>
-          <a href="#contact" onclick="toggleDisplay()">Contact</a>
+      <article class="mobileNavContent">
+        <a href="index.html" onclick="togglePage('navMenu')">Home</a>
+          <a href="#aboutAnchor" onclick="togglePage('navMenu')">About</a>
+          <a href="#portfolioAnchor" onclick="togglePage('navMenu')">Portfolio</a>
+          <a href="#contactAnchor" onclick="togglePage('navMenu')">Contact</a>
+          <a href="final.html"  onclick="togglePage('navMenu')">Final</a>
         </article>
        
     </section>
@@ -206,25 +206,23 @@
         <article id="MRpage" class="projectPage">
 
           <!-- Close button -->
-          <a href="javascript:void(0)" onclick="togglePage('MRpage')" class="projectPageContent">Close</a>
+          <a href="javascript:void(0)" onclick="togglePage('MRpage')" class="closeButton">Close</a>
 
           <article class="projectPageContent">
-              <h2>Messenger Redux</h2>
+              <h3>Messenger Redux - early 2017</h3>
+              <p>Facebook's Messenger app is one of the most popular and widely used messaging apps out there. The purpose of this redesign was to improve Messenger's overall user experience, as it has evolved into a cluttered app with many features that are unpopular and unnecessary.<br><br> This project was completed as a part of coursework.</p>
+            <br>
               
-              <img src="IMGs/messengerredux.png">
-               <p>
-               Facebook's Messenger app is one of the most popular and widely used messaging apps out there. The purpose of this redesign was to improve Messenger's overall user experience, as it has evolved into a cluttered app with many features that are unpopular and unnecessary.
-              </p>
               <br>
 
-              <h3>Goals</h3>
+              <h2>Goals</h2>
               <ul>
                 <li>Improve user experience by making app easier to use and navigate, refocus functionality to revolve around messaging</li>
                 <li>Declutter app by stripping away unpopular features</li>
                 <li>Redesign central navigation to create make certain features more apparent and accessible</li>
               </ul>
 
-              <h3>Role &amp; Duties</h3>
+              <h2>Role &amp; Duties</h2>
               <ul>
                 <li>Project leader</li>
                 <li>Gather and document requirements</li>
@@ -234,10 +232,6 @@
                 <li>Gather, analyze, document, and present interview and test data</li>
                 <li>Author final proposal</li>
               </ul>
-            
-            <br>
-            <a href="/PDFs/MR.pdf" target="_blank" class="seeFullDocButton">See full documentation (PDF)</a>
-            <br>
             <br>
 
           </article>
@@ -257,8 +251,26 @@
             
                     A prototype for an online dollhouse-inspired desktop game that emphasizes collaborative gameplay with friends.<br><br>
 
-            <a href="javascript:void(0)" onclick="toggleMRpage()">Read More</a>
+            <a href="javascript:void(0)" onclick="togglePage('CDpage')">Read More</a>
 
+        </article>
+        
+        <!-- DOLLHOUSE PAGE -->
+        <article id="CDpage" class="projectPage">
+
+          <!-- Close button -->
+          <a href="javascript:void(0)" onclick="togglePage('CDpage')" class="closeButton">Close</a>
+
+          <article class="projectPageContent">
+              <h3>Collaborative Dollhouse - NOV 2017</h3>
+
+              <p>Create an electronic, desktop doll house game that combined the fun of a dollhouse with online collaborative play with friends. The game's target demographic is 4-7 year olds. This proposal prototype was developed by a small group over the course of three weeks. I took the lead of interaction and UI design.<br><br>This project was completed as a part of coursework.<br><br></p>
+              
+              <h2>More project information coming soon.</h2>
+              
+              <br>
+
+          </article>
         </article>
         
         <!-- PORTFOLIO PREVIEW -->
@@ -298,8 +310,8 @@
     
       <br><br><br>
       
-<a href="#aboutAnchor"><article id="continueButton">
-        <img src="IMGs/arrowUp.png">
+<a href="#aboutAnchor"><article id="continueButton"><br>
+        <img src="IMGs/arrowUp.png"><br>
             </article></a>
   </main>
 
